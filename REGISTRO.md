@@ -10,4 +10,4 @@
 * El proyecto trata de la creacion de una plataforma para un estudio juridico (grupo de abogados) para facilitarles la gestion de los casos en los cuales trabajen
 
 ## Registro del trabajo
-* **semana :one::** en esta semana se llevo acabo un leve acercamiento a los requerimientos del sistema
+* **semana** :one: **:** en esta semana se llevo acabo un leve acercamiento a los requerimientos del sistema
