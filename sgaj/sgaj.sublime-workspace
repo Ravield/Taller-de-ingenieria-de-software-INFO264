@@ -1,0 +1,678 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"box",
+				"box-title"
+			],
+			[
+				"b",
+				"box"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"cs",
+				"css_admin"
+			],
+			[
+				"css",
+				"css"
+			],
+			[
+				"u",
+				"ul\tTag"
+			],
+			[
+				"cod",
+				"cod"
+			],
+			[
+				"sy",
+				"System"
+			],
+			[
+				"new",
+				"newline"
+			],
+			[
+				"w",
+				"write"
+			],
+			[
+				"TE",
+				"TEXTO"
+			],
+			[
+				"pr",
+				"println"
+			],
+			[
+				"S",
+				"System"
+			],
+			[
+				"p",
+				"println"
+			],
+			[
+				"PA",
+				"PAREN_DER"
+			],
+			[
+				"pars",
+				"parse"
+			],
+			[
+				"rou",
+				"route"
+			],
+			[
+				"l",
+				"li\tTag"
+			],
+			[
+				"m",
+				"mutex"
+			],
+			[
+				"mq",
+				"mq_send"
+			],
+			[
+				"PAR",
+				"PARCER"
+			],
+			[
+				"jav",
+				"java"
+			],
+			[
+				"EN",
+				"ENTONCES"
+			],
+			[
+				"add",
+				"addItem"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "routes/web.php",
+			"settings":
+			{
+				"buffer_size": 138,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "resources/views/inicio.blade.php",
+			"file_size": 16,
+			"file_write_time": 131551968734300969,
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "inicio.blade.php"
+			}
+		},
+		{
+			"file": "resources/views/clientes.blade.php",
+			"settings":
+			{
+				"buffer_size": 5393,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "home.blade.php"
+			}
+		},
+		{
+			"file": "resources/views/layouts/adminLayout.blade.php",
+			"settings":
+			{
+				"buffer_size": 25133,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "adminLayaou.blade"
+			}
+		},
+		{
+			"file": "/C/Users/Maria/Desktop/timer/index.html",
+			"settings":
+			{
+				"buffer_size": 26692,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/C Sublime Build.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Java/JavaC.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: i",
+		"selected_items":
+		[
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: \t",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: La",
+				"Package Control: Enable Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 252.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/laragon/www/sgaj",
+		"/C/laragon/www/sgaj/resources",
+		"/C/laragon/www/sgaj/resources/views",
+		"/C/laragon/www/sgaj/routes"
+	],
+	"file_history":
+	[
+		"/C/laragon/www/sgaj/sgaj.sublime-project",
+		"/C/Users/Maria/Desktop/AdminLTE-2.4.2/build/js/Layout.js",
+		"/C/laragon/bin/cmder/bin/Readme.md",
+		"/C/laragon/bin/cmder/config/Readme.md",
+		"/C/laragon/bin/cmder/config/user-aliases.cmd",
+		"/C/laragon/bin/cmder/bin/alias.bat",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/tds2017_ARAYA_ARRIAGADA/Codigo fuente/analizador_sintactico.cup",
+		"/C/laragon/bin/cmder/README.md",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/tds2017/tds2017.bat",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/tds2017/src/analizador_sintactico.cup",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/tds2017/Codigo fuente/analizador_lexico.lex",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/compiladores/Compiladores/01_Tareas_Compiladores/Tarea2010/Código Fuente/Analizador.lex",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/Codigo Fuente/PROGRAMA COMPILADOR.bat",
+		"/C/Users/Maria/Desktop/Tarea2007/Codigo Fuente/analizador_sintactico.cup",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/Codigo Fuente/analizador_sintactico.cup",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/Codigo Fuente/tds2017.bat",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/Codigo Fuente/analizador_lexico.lex",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/compilador.cup",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/compilador.LEX",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/TAREA_ARAYA_ALARCON_GODOY2016/TS2016.cup",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/TAREA_ARAYA_ALARCON_GODOY2016/TS2016.lex",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/Compilador.java",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/sebita/Semantico.cup",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/compiladores/Compiladores/01_Tareas_Compiladores/Tarea2010/Códigos CUP y JFlex/Conversor.cup",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/compiladores/Compiladores/01_Tareas_Compiladores/Tarea2010/Código Fuente/BDPersonas.java",
+		"/C/Users/Maria/Desktop/Tarea2007/Codigo Fuente/analizador_lexico.lex",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/Codigo Fuente/Main.java",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/compiladores/Compiladores/01_Tareas_Compiladores/Tarea2010/Código Fuente/Conversor.cup",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/compiladores/Compiladores/Compiladores/Trabajo/Tarea_Final/Codigo Fuente/Ejecutar.bat",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/compiladores/Compiladores/Compiladores/Trabajo/Parser.cup",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/compiladores/Compiladores/Compiladores/Trabajo/lexer.lex",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/compiladores/Compiladores/Compiladores/Trabajo/Tarea_Final/JLex/Main.java",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/compiladores/Compiladores/Compiladores/Trabajo/Ejecutar.bat",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/compiladores/Compiladores/Compiladores/javaCup2013/src/Sherlock.java",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/compiladores/Compiladores/Guias, Cup y JFlex/Tarea Compi Guz/Carpeta/parser.java",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/compiladores/Compiladores/Trabajo Compiladores/Compilar Parser.bat",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/compiladores/Compiladores/Trabajo Compiladores/Iniciar Parser.bat",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/analizador_lexico.lex",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/Main.java",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/analizador_sintactico.cup",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/PROGRAMA COMPILADOR.bat",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/TAREA_ARAYA_ALARCON_GODOY2016/PROGRAMA COMPILADOR.bat",
+		"/C/Users/Maria/Desktop/Tarea2007/Codigo Fuente/Test.java",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/compiladores/Compiladores/01_Tareas_Compiladores/Tarea2010/Códigos CUP y JFlex/Analizador.lex",
+		"/C/Users/Maria/Desktop/Tarea2007/Temp/parser.java",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/TAREA_ARAYA_ALARCON_GODOY2016/Lista.java",
+		"/C/Users/Maria/Desktop/Tarea2007/Codigo Fuente/PROGRAMA COMPILADOR.bat",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/sym.java",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/TAREA_ARAYA_ALARCON_GODOY2016/sym.java",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/TAREA_ARAYA_ALARCON_GODOY2016/sym.class",
+		"/C/Users/Maria/Desktop/Tarea2007/Temp/lulo.njp",
+		"/C/Users/Maria/Desktop/Tarea2007/Temp/java_cup/Main.java",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/parser.java",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/Yylex.java",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/TAREA_ARAYA_ALARCON_GODOY2016/parser.java",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/TAREA_ARAYA_ALARCON_GODOY2016/Nodo.java",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/Yylex.java~",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/compiladores/Compiladores/01_Tareas_Compiladores/Tarea2010/Código Fuente/Editor.java",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/Nueva carpeta/analizador_sintactico.cup",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/Nueva carpeta/Test.class",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/Nueva carpeta/analizador_lexico.lex",
+		"/C/Users/Maria/Desktop/Tarea2007/Temp/TDS.jar",
+		"/C/Users/Maria/Desktop/Tarea2007/Temp/Yylex.java",
+		"/C/Users/Maria/Desktop/Tarea2007/Temp/tvset.ico",
+		"/C/Users/Maria/Desktop/Tarea2007/Temp/parser.class",
+		"/C/Users/Maria/Desktop/Tarea2007/Temp/CUP$parser$actions.class",
+		"/C/Users/Maria/Desktop/Tarea2007/TDS V33.9.exe",
+		"/C/Users/Maria/Desktop/tarea compiladores 2017/jar/jflex.jar",
+		"/C/Users/Maria/Desktop/Tarea2007/Temp/Test.java",
+		"/C/Users/Maria/Desktop/Tarea2007/Temp/prueba.txt",
+		"/C/Users/Maria/Desktop/jflex-1.6.1/README.md",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/compiladores/TAREA_ARAYA_ALARCON_GODOY2016/Yylex.java",
+		"/C/Users/Maria/AppData/Local/Temp/Rar$DIa0.365/README.md",
+		"/C/laragon/www/my-app/routes/web.php",
+		"/C/Users/Maria/Desktop/proyecto taller/sisAbogados/routes/web.php",
+		"/C/Users/Maria/Desktop/proyecto taller/sisAbogados/resources/views/estudio/clientes/create.blade.php",
+		"/C/Users/Maria/Desktop/proyecto taller/sisAbogados/resources/views/estudio/clientes/index.blade.php",
+		"/C/Users/Maria/Desktop/proyecto taller/sisAbogados/resources/views/layouts/admin.blade.php",
+		"/C/Users/Maria/Desktop/proyecto taller/Plantilla/inicio.html",
+		"/C/laragon/www/my-app/app/Http/Controllers/HomeController.php",
+		"/C/Users/Maria/Desktop/proyecto taller/sisAbogados/config/app.php",
+		"/C/Users/Maria/Desktop/proyecto taller/sisAbogados/resources/lang/es/validation.php",
+		"/C/Users/Maria/Desktop/proyecto taller/sisAbogados/resources/lang/es/passwords.php",
+		"/C/Users/Maria/Desktop/proyecto taller/sisAbogados/resources/lang/es/pagination.php",
+		"/C/Users/Maria/Desktop/proyecto taller/sisAbogados/resources/lang/es/auth.php",
+		"/C/Users/Maria/Desktop/proyecto taller/sisAbogados/app/Http/Kernel.php",
+		"/C/Users/Maria/Desktop/Tarea2007/Temp/TDS V33.9.exe",
+		"/C/Users/Maria/Desktop/Tarea2007/Temp/analizador_sintactico.cup",
+		"/C/Users/Maria/Desktop/Tarea2007/Temp/analizador_lexico.lex",
+		"/C/laragon/www/index.php",
+		"/C/laragon/www/my-app/resources/views/layouts/inicio.blade.php",
+		"/C/laragon/www/my-app/resources/views/emails/message.blade.php",
+		"/C/laragon/www/my-app/config/mail.php",
+		"/C/laragon/www/my-app/resources/views/layout.blade.php",
+		"/C/laragon/www/my-app/database/seeds/DatabaseSeeder.php",
+		"/C/laragon/www/my-app/app/User.php",
+		"/C/laragon/www/my-app/resources/views/home.blade.php",
+		"/C/laragon/www/my-app/resources/views/layouts/layout2.blade.php",
+		"/C/laragon/www/my-app/database/migrations/2017_10_23_204206_permissions.php",
+		"/C/laragon/www/my-app/vendor/spatie/laravel-permission/src/PermissionServiceProvider.php",
+		"/C/laragon/www/my-app/.env",
+		"/C/Users/Maria/Documents/dashboard/AdminLTE 2 _ Dashboard_archivos/css.css",
+		"/C/laragon/www/my-app/resources/views/about.blade.php",
+		"/C/Users/Maria/Desktop/timer/index.html",
+		"/C/laragon/www/my-app/resources/views/contact.blade.php",
+		"/C/laragon/www/my-app/vendor/spatie/laravel-permission/database/migrations/create_permission_tables.php.stub",
+		"/C/laragon/www/my-app/database/seeds/RolesSeeder.php",
+		"/C/laragon/www/my-app/config/permission.php",
+		"/C/laragon/www/my-app/resources/views/service.blade.php",
+		"/C/laragon/www/my-app/composer.json",
+		"/C/Users/Maria/Desktop/timer/404.html",
+		"/C/laragon/www/my-app/resources/views/errors/404.blade.php",
+		"/C/Users/Maria/Desktop/timer/contact.html",
+		"/C/Users/Maria/Desktop/timer/service.html",
+		"/C/Users/Maria/Desktop/timer/about.html",
+		"/C/laragon/www/my-app/my-app.sublime-project",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/IA/Algoritmos Evolutivos/proyectoia/AlgoritmoEvolutivo.java",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/IA/twitter_streaming.py",
+		"/C/Users/Maria/Desktop/MyCollab-5.4.10/bin/service.bat",
+		"/C/Users/Maria/Desktop/UNIVER SIDA D/2 semestre 2016/IA/inmigrantes",
+		"/C/Users/Maria/Desktop/redes viernes 18 agosto",
+		"/C/Users/Maria/Desktop/Taller-de-ingenieria-de-software-INFO264/README.md",
+		"/C/Users/Maria/Documents/pendrive/Nueva carpeta/main.cpp",
+		"/C/Users/Maria/Desktop/prioridad.c",
+		"/C/Users/Maria/Downloads/sigAlarm.c",
+		"/C/Users/Maria/Desktop/planificacion_p.c",
+		"/C/Users/Maria/Desktop/prioridad_hilo.c",
+		"/C/Users/Maria/Desktop/Procesos__Thread/fork.c"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "routes/web.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 138,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								138,
+								138
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "resources/views/inicio.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "inicio.blade.php",
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resources/views/clientes.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5393,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2914,
+								2914
+							]
+						],
+						"settings":
+						{
+							"auto_name": "home.blade.php",
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "resources/views/layouts/adminLayout.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21928,
+								21928
+							]
+						],
+						"settings":
+						{
+							"auto_name": "adminLayaou.blade",
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 5684.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/Maria/Desktop/timer/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 26692,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 257.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sgaj.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"createpermiss",
+				"my-app\\vendor\\spatie\\laravel-permission\\database\\migrations\\create_permission_tables.php.stub"
+			],
+			[
+				"permissionse",
+				"my-app\\vendor\\spatie\\laravel-permission\\src\\PermissionServiceProvider.php"
+			],
+			[
+				"compo",
+				"my-app\\composer.json"
+			],
+			[
+				"databases",
+				"my-app\\database\\seeds\\DatabaseSeeder.php"
+			],
+			[
+				"rol",
+				"my-app\\database\\seeds\\RolesSeeder.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 212.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
