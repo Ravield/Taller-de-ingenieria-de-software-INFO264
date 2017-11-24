@@ -18,7 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
-            $table->smallinteger('role')->default(2); //0: Admin | 1:Team | 2:Client
+            $table->smallinteger('role')->default(1); //0: Admin | 1:Team Member
             $table->rememberToken();
             $table->timestamps();
         });

@@ -395,7 +395,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i>Usuarios</a></li>
+            <li><a href="/usuarios"><i class="fa fa-circle-o"></i>Usuarios</a></li>
           </ul>
         </li>
       </ul>

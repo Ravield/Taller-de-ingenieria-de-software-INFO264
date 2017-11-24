@@ -11,13 +11,13 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('inicio');
-});
+});*/
 
-Route::get('clientes', function () {
+/*Route::get('clientes', function () {
     return view('clientes');
-});
+});*/
 
 Route::get('/', function () {
     //return view('welcome');
@@ -64,8 +64,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('clientes', 'HomeController@client')->name('client');
 
 //Aplicar un middleware a un conjunto de rutas
-Route::group(['middleware' => 'auth', 'namespace' => 'Admin'], function(){
-	Route::get('/clientes2', 'TestController@index')->name('client2');
+Route::group(['middleware' => 'admin', 'namespace' => 'Admin'], function(){
+	Route::get('/usuarios', 'TestController@index')->name('adusers');
 });
 
 
