@@ -15,7 +15,7 @@
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="icon" type="image/png" href="images/favicon.png">
-        <title>Timer Agency Template</title>
+        <title>Mattar & asociados</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="author" content="">
@@ -33,7 +33,7 @@
         <!-- animate css -->
         <link rel="stylesheet" href="timer/css/animate.css">
         <!-- Hero area slider css-->
-        <link rel="stylesheet" href="timer/cssslider.css">
+        <link rel="stylesheet" href="timer/css/slider.css">
         <!-- owl craousel css -->
         <link rel="stylesheet" href="timer/css/owl.carousel.css">
         <link rel="stylesheet" href="timer/css/owl.theme.css">
@@ -82,7 +82,7 @@
                     <!-- logo -->
                     <div class="navbar-brand">
                         <a href="index.html" >
-                            <img src="timer/images/logo.png" alt="">
+                            <img src="timer/images/logomya.png" alt="" >
                         </a>
                     </div>
                     <!-- /logo -->

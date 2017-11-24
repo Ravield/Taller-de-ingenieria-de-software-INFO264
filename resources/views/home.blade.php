@@ -1,7 +1,7 @@
-@extends('layouts/timerLayout')
+@extends('layouts.timerLayout')
 
 @section('contenido') <!-- sirve para referenciar al yield-->
-<section id="hero-area" >
+        <section id="hero-area" >
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
