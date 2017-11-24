@@ -9,7 +9,9 @@
 
   <!-- Main content -->
   <section class="content">
-
+    <div class="alert alert-info">
+      <strong>Bienvenido</strong> a SGAJ.
+    </div>
   </section>
   <!-- /.content -->
 </div>

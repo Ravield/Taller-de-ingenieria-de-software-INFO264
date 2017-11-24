@@ -40,4 +40,8 @@ class HomeController extends Controller
     {
         return view('adclient');
     }
+    public function cause()
+    {
+        return view('cause');
+    }
 }

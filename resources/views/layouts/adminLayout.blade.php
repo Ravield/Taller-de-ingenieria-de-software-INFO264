@@ -400,7 +400,7 @@
           </ul>
         </li>
 
-        <li><a href="nani"><i class="fa fa-book"></i><span>Causas</span></a></li>
+        <li><a href="causas"><i class="fa fa-book"></i><span>Causas</span></a></li>
 
         <li class="treeview">
           <a href="#">

@@ -1,10 +1,10 @@
-<?
+<?php
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCausesTable extends Migration
+class CreateClientsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,15 @@ class CreateCausesTable extends Migration
      */
     public function up()
     {
-        Schema::create('causes', function (Blueprint $table) {
+        Schema::create('clients', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nombre');
-            $table->string('tipo');
-            $table->string('resumen');
-
-            //causas asociadas a un usuario
-            $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->integer('rut');
+            $table->string('direccion');
+            $table->integer('telefono');
+            //foreign key
+            $table->integer('cause_id')->unsigned();
+            $table->foreign('cause_id')->references('id')->on('causes');
 
             $table->timestamps();
         });
@@ -34,6 +34,6 @@ class CreateCausesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('causes');
+        Schema::dropIfExists('clients');
     }
 }

@@ -15,6 +15,14 @@ class CreateCausesTable extends Migration
     {
         Schema::create('causes', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('nombre');
+            $table->string('tipo');
+            $table->string('resumen');
+
+            //causas asociadas a un usuario
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users');
+
             $table->timestamps();
         });
     }
