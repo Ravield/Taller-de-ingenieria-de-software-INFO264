@@ -22,11 +22,15 @@
 
     <!-- Main content -->
     <section class="content">
-      <div class="alert alert-info">
-        <strong>No hay causas</strong>.
-      </div>
+      <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Crear Causas</h3>
+            </div>
+          </div>
     </section>
   </div>
+
+
   <!-- /.content-wrapper -->
 
 @stop

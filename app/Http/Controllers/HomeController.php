@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+//use App\User;
 class HomeController extends Controller
 {
     /**
@@ -42,6 +42,13 @@ class HomeController extends Controller
     }
     public function cause()
     {
-        return view('cause');
+        //como le enviamos las variables a la vista
+        //$categories = Category::all(); //ej todas las categorias de todos los projectos
+        //$categories = Category::where('project_id', 1)->get();
+        //$users = User::all();
+        return view('cause'); //para no estar repitiendo la misma palabra
+        //compact enviamos un array asociativo a la vista
+        /*return view('cause')->with('causes', $causes); como queremos que se reciba la variable
+        en la vista y el nombre de la variable en si*/
     }
 }
