@@ -23,7 +23,7 @@
         ================================================== -->
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
         <!-- Template CSS Files
         ================================================== -->
         <!-- Twitter Bootstrs CSS -->
@@ -42,7 +42,7 @@
         <link rel="stylesheet" href="timer/css/main.css">
         <!-- responsive css -->
         <link rel="stylesheet" href="timer/css/responsive.css">
-        
+
         <!-- Template Javascript Files
         ================================================== -->
         <!-- modernizr js -->
@@ -78,7 +78,7 @@
                     <span class="icon-bar"></span>
                     </button>
                     <!-- /responsive nav button -->
-                    
+
                     <!-- logo -->
                     <div class="navbar-brand">
                         <a href="index.html" >
@@ -92,13 +92,13 @@
                     <div class="main-menu">
                         <ul class="nav navbar-nav navbar-right">
                             <!--<li>
-                                <a href="{{route('home')}}">Inicio</a> <!-- es para que no sea necesario cambiar la navegacion si cambiamos la url-->
+                                <a href="{{route('home')}}">Inicio</a>  es para que no sea necesario cambiar la navegacion si cambiamos la url-->
                             <!-- que se vea solo si esta logeado-->
                             @if(auth()->check())
                                 <li><a href="{{route('about')}}">Nosotros</a></li>
                                 <li><a href="{{route('service')}}">Servicios</a></li>
                                 <li><a href="{{route('contact')}}">Contacto</a></li>
-                                <li><a href="{{route('client')}}">Clientes</a></li>
+                                <li><a href="{{route('adini')}}">Adminstración</a></li>
                             @else
                                 <li><a href="{{route('about')}}">Nosotros</a></li>
                                 <li><a href="{{route('service')}}">Servicios</a></li>
@@ -115,8 +115,8 @@
 
 <!-- directiva de blade que sirve para definir un espacio donde las demas vistas van a poder poner su contenido unico -->
 @yield('contenido')
-   <!-- 
-        ================================================== 
+   <!--
+        ==================================================
             Call To Action Section Start
         ================================================== -->
         <section id="call-to-action">
@@ -129,11 +129,11 @@
                             <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact With Me</a>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
-        
+
             <footer id="footer">
                 <div class="container">
                     <div class="col-md-8">
@@ -166,7 +166,6 @@
                     </div>
                 </div>
             </footer> <!-- /#footer -->
-                
+
         </body>
     </html>
-

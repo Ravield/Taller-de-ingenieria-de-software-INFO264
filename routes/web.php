@@ -11,13 +11,13 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('inicio');
-});
+});*/
 
-Route::get('clientes', function () {
+/*Route::get('clientes', function () {
     return view('clientes');
-});
+});*/
 
 Route::get('/', function () {
     //return view('welcome');
@@ -56,19 +56,22 @@ Route::post('messages', function(){
 	return back()->with('flash', $data['name'] . ', Tu mensaje ha sido recibido');
 })->name('messages');
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-//la ruta home es resuelta por HomeController@index
-
-Route::get('clientes', 'HomeController@client')->name('client');
+Route::get('administracion', 'HomeController@adini')->name('adini');
+Route::get('verclientes', 'HomeController@adclient')->name('adclient');
+Route::get('crearclientes', 'HomeController@createclient')->name('createclient');
+Route::get('causas', 'HomeController@cause')->name('cause');
 
 //Aplicar un middleware a un conjunto de rutas
-Route::group(['middleware' => 'auth', 'namespace' => 'Admin'], function(){
-	Route::get('/clientes2', 'TestController@index')->name('client2');
+Route::group(['middleware' => 'admin', 'namespace' => 'Admin'], function(){
+	Route::get('/usuarios', 'TestController@index')->name('adusers');
 });
 
 
 /*Route::get('clientes', function () {
     return view('clientes');
 })->name('clientes');*/
+
+Auth::routes();
+//la ruta home es resuelta por HomeController@index
+Route::get('/home', 'HomeController@index')->name('home');

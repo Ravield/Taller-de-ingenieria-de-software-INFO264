@@ -12,7 +12,6 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <!--<link href="https://bootswatch.com/4/yeti/bootstrap.css" rel="stylesheet">-->
 </head>
 <body>
     <div id="app">

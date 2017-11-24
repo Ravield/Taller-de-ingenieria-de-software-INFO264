@@ -10,9 +10,9 @@
         Clientes
         <small>Gestion de los clientes</small>
       </h1>
-      <div class="btn">
+      <!--<div class="btn">
       	<button type="button" class="btn btn-primary btn-md">Agregar</button>
-      </div>
+      </div>-->
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
         <!--<li><a href="#">Examples</a></li>-->
@@ -123,7 +123,6 @@
         <!-- /.box-footer-->
       </div>
       <!-- /.box -->
-
     </section>
     <!-- /.content -->
   </div>

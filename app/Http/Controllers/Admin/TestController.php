@@ -9,7 +9,6 @@ class TestController extends Controller
 {
   public function index()
   {
-    return 'Ruta /clientes2 resuelta por TestController@index';
+    return 'Ruta /usuarios2 resuelta por TestController@index';
   }
-    //
 }
