@@ -11,9 +11,6 @@ class HomeController extends Controller
      *
      * @return void
      */
-
-    /* cuando definimos un middleware en el constructor de un controlador, afectara
-    a todos los metodos dentro del controlador*/
     public function __construct()
     {
         $this->middleware('auth');
@@ -29,9 +26,18 @@ class HomeController extends Controller
         return view('home');
     }
 
-    //acesso a clientes
-     public function client()
+    public function adini()
     {
-        return view('client');
+        return view('adini');
+    }
+
+    public function createclient()
+    {
+        return view('createclient');
+    }
+
+    public function adclient()
+    {
+        return view('adclient');
     }
 }

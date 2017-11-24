@@ -56,12 +56,10 @@ Route::post('messages', function(){
 	return back()->with('flash', $data['name'] . ', Tu mensaje ha sido recibido');
 })->name('messages');
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-//la ruta home es resuelta por HomeController@index
-
-Route::get('clientes', 'HomeController@client')->name('client');
+Route::get('administracion', 'HomeController@adini')->name('adini');
+Route::get('verclientes', 'HomeController@adclient')->name('adclient');
+Route::get('crearclientes', 'HomeController@createclient')->name('createclient');
 
 //Aplicar un middleware a un conjunto de rutas
 Route::group(['middleware' => 'admin', 'namespace' => 'Admin'], function(){
@@ -72,3 +70,7 @@ Route::group(['middleware' => 'admin', 'namespace' => 'Admin'], function(){
 /*Route::get('clientes', function () {
     return view('clientes');
 })->name('clientes');*/
+
+Auth::routes();
+//la ruta home es resuelta por HomeController@index
+Route::get('/home', 'HomeController@index')->name('home');

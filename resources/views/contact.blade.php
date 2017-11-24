@@ -1,8 +1,8 @@
 @extends('layouts/app')
 
 @section('contenido') <!-- sirve para referenciar al yield-->
-<!-- 
-        ================================================== 
+<!--
+        ==================================================
             Global Page Section Start
         ================================================== -->
         <section class="global-page-header">
@@ -23,12 +23,12 @@
                         </div>
                     </div>
                 </div>
-            </div>   
+            </div>
         </section><!--/#page-header-->
 
 
-        <!-- 
-        ================================================== 
+        <!--
+        ==================================================
             Contact Section Start
         ================================================== -->
         <section id="contact-section">
@@ -53,24 +53,24 @@
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
                                         <input type="text" placeholder="Your Name" class="form-control" name="name" id="name" required>
                                     </div>
-                                    
+
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
                                         <input type="email" placeholder="Your Email" class="form-control" name="email" id="email" required>
                                     </div>
-                                    
+
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
                                         <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject" required>
                                     </div>
-                                    
+
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
-                                        <textarea rows="6" placeholder="Message" class="form-control" name="body" id="body" required></textarea>    
+                                        <textarea rows="6" placeholder="Message" class="form-control" name="body" id="body" required></textarea>
                                     </div>
                                     
-                                    
+
                                     <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
                                         <input type="submit" id="contact-submit" class="btn btn-default btn-send" value="Send Message">
-                                    </div>                      
-                                    
+                                    </div>
+
                                 </form>
                             </div>
                         </div>
@@ -80,11 +80,11 @@
                             <h2 class="subtitle  wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Find Us</h2>
                             <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
                                 Si aute quis eu proident o cupidatat ne anim nescius, et est praesentibus, o quorum vidisse expetendis, nostrud eram quibusdam ad nam nostrud ubi.
-                                
+
                             </p>
                             <div class="map">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191.53939553049312!2d-73.24535679541263!3d-39.81528323606096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9615ee76f42ef353%3A0x78da7436bc4e64ba!2sRadio+Pilmaiquen!5e0!3m2!1ses!2scl!4v1510724314275" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                
+
                             </div>
                         </div>
                     </div>
