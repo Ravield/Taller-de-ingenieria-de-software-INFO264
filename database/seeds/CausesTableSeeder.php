@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Cause;
 
 class CausesTableSeeder extends Seeder
 {
@@ -11,6 +12,11 @@ class CausesTableSeeder extends Seeder
      */
     public function run()
     {
-  
+      Cause::create([
+        'nombre' => 'Obando vs Hidalgo',
+        'tipo' => 'Familia',
+        'resumen' => 'pelea en zona zero',
+        'user_id' => 1//no creo que esto este bien
+      ]);
     }
 }
