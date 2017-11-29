@@ -20,5 +20,14 @@ class ClientsTableSeeder extends Seeder
         'correo' => 'ravield1192@gmail.com',
         'cause_id' => 1//no creo que esto este bien
       ]);
+
+      Client::create([
+        'nombre' => 'Francisco Gonzalez',
+        'rut' => '187845444',
+        'direccion' => 'Miraflores',
+        'telefono' => '985993273',
+        'correo' => 'naniomaewa@gmail.com',
+        'cause_id' => 1//no creo que esto este bien
+      ]);
     }
 }

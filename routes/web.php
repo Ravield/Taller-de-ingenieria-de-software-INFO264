@@ -75,3 +75,7 @@ Route::group(['middleware' => 'admin', 'namespace' => 'Admin'], function(){
 Auth::routes();
 //la ruta home es resuelta por HomeController@index
 Route::get('/home', 'HomeController@index')->name('home');
+
+//nani
+Route::get('/verclientes','ClientsController@showClients')->name('adclient');
+Route::get('/causas','CausesController@showCauses')->name('cause');

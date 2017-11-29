@@ -22,22 +22,11 @@
 
     <!-- Main content -->
     <section class="content">
-      <table class="table table-hover">
-        <thead>
-          <th>Nombre</th>
-          <th>Tipo</th>
-          <th>Resumen</th>
-        </thead>
-        <tbody>
-          @foreach($causas as $causa)
-          <tr>
-            <td>{{$causa->nombre}}</td>
-            <td>{{$causa->tipo}}</td>
-            <td>{{$causa->resumen}}</td>
-          </tr>
-          @endforeach
-        </tbody>
-      </table>
+      <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Crear Causas</h3>
+            </div>
+          </div>
     </section>
   </div>
 
