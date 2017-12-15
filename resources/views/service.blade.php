@@ -37,7 +37,7 @@
                     <div class="col-md-6">
                         <div class="block">
                             <h2 class="subtitle wow fadeInUp animated" data-wow-delay=".3s" data-wow-duration="500ms">Áreas</h2>
-                            <p class="subtitle-des wow fadeInUp animated" data-wow-delay=".5s" data-wow-duration="500ms">Especializados en las multiples areas de practica.</p>
+                            <p class="subtitle-des wow fadeInUp animated" data-wow-delay=".5s" data-wow-duration="500ms">Especializados en múltiples áreas de práctica.</p>
                             <div class="container">
                                 <div class="col-md-4">
                                     <div class="block wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="600ms">
@@ -45,7 +45,7 @@
                                         <h4>Civiles</h4>
                                         <p>- Deudas.</p>
                                         <p>- Arriendos.</p>
-                                        <p>- Tercerias.</p>
+                                        <p>- Tercerías.</p>
                                         <p>- Juicios Ejecutivos, Ordinarios, Sumarios.</p>
                                         <p>- Cambio de Nombre y Apellidos.</p>
                                     </div>
@@ -57,16 +57,18 @@
                                         <p>- Divorcios.</p>
                                         <p>- Alimentos.</p>
                                         <p>- Cuidado Personal.</p>
-                                        <p>- Compensación Economica.</p>
+                                        <p>- Compensación Económica.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="block wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="1s">
                                         <!--<i class="ion-ios-paper-outline"></i>-->
                                         <h4>Penal</h4>
-                                        <p>- Suspensión Condiconal.</p>
+                                        <p>- Suspensión Condicional del Procedimiento.</p>
                                         <p>- Acuerdos Reparatorios.</p>
-                                        <p>- Juicios Abrevidos y Simplificados</p>
+                                        <p>- Juicios Abreviados y Simplificados.</p>
+                                        <p>- Audiencias de preparación de Juicio Oral</p>
+                                        <p>- Juicio Oral</p>
                                     </div>
                                 </div>
                             </div>
@@ -79,25 +81,21 @@
                                         <p>- Despidos Injustificados.</p>
                                         <p>- Despido Indirecto.</p>
                                         <p>- Defensa Juicio Laboral.</p>
-                                        <p>- Indemnizaciones por Accidentes Laborales</p>
+                                        <p>- Indemnizaciones por Accidentes Laborales.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="block wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="1.1s">
                                         <!--<i class="ion-ios-paper-outline"></i>-->
                                         <h4>Corte de Apelaciones</h4>
-                                        <p>- Help 1</p>
-                                        <p>- Help 2</p>
-                                        <p>- Help 3</p>
+                                        <p>- Recurso de Protección.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="block wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="1.1s">
                                         <!--<i class="ion-ios-paper-outline"></i>-->
                                         <h4>Comercial</h4>
-                                        <p>- Help 1</p>
-                                        <p>- Help 2</p>
-                                        <p>- Help 3</p>
+                                        <p>- Confección de escrituras de Sociedad.</p>
                                     </div>
                                 </div>
                             </div>
