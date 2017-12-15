@@ -38,7 +38,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="block">
-                            <h3 class="subtitle wow fadeInUp" data-wow-delay=".3s" data-wow-duration="500ms">Why We are Different</h3>
+                            <h3 class="subtitle wow fadeInUp" data-wow-delay=".3s" data-wow-duration="500ms">Por que nos diferenciamos</h3>
                             <p  class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms">
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequun. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </p>
@@ -62,7 +62,7 @@
                 <div class="row">
                     <div class="block about-feature-1 wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">
                         <h2>
-                        Why Choose Us
+                        Por que elegirnos
                         </h2>
                         <p>
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas.
@@ -70,7 +70,7 @@
                     </div>
                     <div class="block about-feature-2 wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
                         <h2 class="item_title">
-                        What You Get
+                        Que gana con nosotros
                         </h2>
                         <p>
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas.
@@ -96,117 +96,55 @@
         <section id="team">
             <div class="container">
                 <div class="row">
-                    <h2 class="subtitle text-center">Meet The Team</h2>
-                    <div class="col-md-3">
+                    <h2 class="subtitle text-center">Conozca al equipo</h2>
+                    <div class="col-md-4">
                         <div class="team-member wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".3s">
                             <div class="team-img">
                                 <img src="timer/images//team/team-1.jpg" class="team-pic" alt="">
                             </div>
-                            <h3 class="team_name">Jonathon Andrew</h3>
-                            <p class="team_designation">CEO, Project Manager</p>
-                            <p class="team_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
-                            <p class="social-icons">
-                                <a href="#" class="facebook" target="_blank"><i class="ion-social-facebook-outline"></i></a>
-                                <a href="#" target="_blank"><i class="ion-social-twitter-outline"></i></a>
-                                <a href="#" target="_blank"><i class="ion-social-linkedin-outline"></i></a>
-                                <a href="#" target="_blank"><i class="ion-social-googleplus-outline"></i></a>
-                            </p>
+                            <h3 class="team_name">Pablo Obreque Pardo</h3>
+                            <p class="team_designation">Abogado </p>
+                            <p class="team_text">Universidad Austral de chile, diplomado en derecho tributario </p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="team-member wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".5s">
                             <div class="team-img">
                                 <img src="timer/images//team/team-2.jpg" class="team-pic" alt="">
                             </div>
-                            <h3 class="team_name">Jesmin Martina</h3>
-                            <p class="team_designation">CEO, Project Manager</p>
-                            <p class="team_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore .</p>
-                            <p class="social-icons">
-                                <a href="#" class="facebook" target="_blank"><i class="ion-social-facebook-outline"></i></a>
-                                <a href="#" target="_blank"><i class="ion-social-twitter-outline"></i></a>
-                                <a href="#" target="_blank"><i class="ion-social-linkedin-outline"></i></a>
-                                <a href="#" target="_blank"><i class="ion-social-googleplus-outline"></i></a>
-                            </p>
+                            <h3 class="team_name">Gabriela Hidalgo Sáez</h3>
+                            <p class="team_designation">Abogada</p>
+                            <p class="team_text">Universidad Austral de chile, diplomada en derechos sociales, políticas publicas y gestión global.</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="team-member wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".7s">
                             <div class="team-img">
                                 <img src="timer/images//team/team-3.jpg" class="team-pic" alt="">
                             </div>
-                            <h3 class="team_name">Deu John</h3>
-                            <p class="team_designation">CEO, Project Manager</p>
-                            <p class="team_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore .</p>
-                            <p class="social-icons">
-                                <a href="#" class="facebook" target="_blank"><i class="ion-social-facebook-outline"></i></a>
-                                <a href="#" target="_blank"><i class="ion-social-twitter-outline"></i></a>
-                                <a href="#" target="_blank"><i class="ion-social-linkedin-outline"></i></a>
-                                <a href="#" target="_blank"><i class="ion-social-googleplus-outline"></i></a>
-                            </p>
+                            <h3 class="team_name">Camila Mattar Hazbun</h3>
+                            <p class="team_designation">Abogada</p>
+                            <p class="team_text">Universidad Austral de chile, con experiencia en derecho de familia y derecho civil.</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="team-member wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".9s">
-                            <div class="team-img">
-                                <img src="timer/images/team/team-4.jpg" class="team-pic" alt="">
-                            </div>
-                            <h3 class="team_name">Anderson Martin</h3>
-                            <p class="team_designation">CEO, Project Manager</p>
-                            <p class="team_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore .</p>
-                            <p class="social-icons">
-                                <a href="#" class="facebook" target="_blank"><i class="ion-social-facebook-outline"></i></a>
-                                <a href="#" target="_blank"><i class="ion-social-twitter-outline"></i></a>
-                                <a href="#" target="_blank"><i class="ion-social-linkedin-outline"></i></a>
-                                <a href="#" target="_blank"><i class="ion-social-googleplus-outline"></i></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                 </div>
             </div>
         </section>
-        <!--
+         <!--
         ==================================================
-        Clients Section Start
+            Call To Action Section Start
         ================================================== -->
-        <section id="clients">
+        <section id="call-to-action">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="subtitle text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Our Happy Clinets</h2>
-                        <p class="subtitle-des text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, error.</p>
-                        <div id="clients-logo" class="owl-carousel">
-                            <div>
-                                <img src="timer/images/clients/logo-1.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="timer/images/clients/logo-2.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="timer/images/clients/logo-3.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="timer/images/clients/logo-4.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="timer/images/clients/logo-5.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="timer/images/clients/logo-1.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="timer/images/clients/logo-2.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="timer/images/clients/logo-3.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="timer/images/clients/logo-4.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="timer/images/clients/logo-5.jpg" alt="">
-                            </div>
+                        <div class="block">
+                            <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">¿QUIERE TRABAJAR CON NOSOTROS?</h1>
+                            <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Si tiene dudas o quiere asesorarse con nosotros no dude en contactarnos ,</br>es facil y sin costo, trataremos de contestale en la brevedad.</p>
+                            <a href="{{route('contact')}}" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contactenos</a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>

@@ -89,22 +89,16 @@
                     </div>
                 </div>
                 <div class="row address-details">
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".5s">
                             <i class="ion-ios-location-outline"></i>
-                            <h5>Arauco 340<br>Valdivia, Región de los Ríos</h5>
+                            <p>Arauco 340 Valdivia, Región de los Ríos</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="email wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".7s">
-                            <i class="ion-ios-email-outline"></i>
-                            <p>support@themefisher.com<br>support@themefisher.com</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="phone wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".9s">
                             <i class="ion-ios-telephone-outline"></i>
-                            <p>+07 052 245 022<br>+07 999 999 999</p>
+                            <p>+56950525853 </p>
                         </div>
                     </div>
                 </div>

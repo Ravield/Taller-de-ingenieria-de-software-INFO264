@@ -54,94 +54,23 @@
                 </div>
             </section> <!-- /#about -->
 
-            <section id="feature">
-                <div class="container">
-                    <div class="section-heading">
-                        <h1 class="title wow fadeInDown" data-wow-delay=".3s">Offer From Me</h1>
-                        <p class="wow fadeInDown" data-wow-delay=".5s">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed,<br> quasi dolores numquam dolor vero ex, tempora commodi repellendus quod laborum.
-                        </p>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 col-lg-4 col-xs-12">
-                            <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
-                                <div class="media-left">
-                                    <div class="icon">
-                                        <i class="ion-ios-flask-outline"></i>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Media heading</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-xs-12">
-                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="600ms">
-                                <div class="media-left">
-                                    <div class="icon">
-                                        <i class="ion-ios-lightbulb-outline"></i>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Well documented.</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-xs-12">
-                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="900ms">
-                                <div class="media-left">
-                                    <div class="icon">
-                                        <i class="ion-ios-lightbulb-outline"></i>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Well documented.</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-xs-12">
-                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1200ms">
-                                <div class="media-left">
-                                    <div class="icon">
-                                        <i class="ion-ios-americanfootball-outline"></i>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Free updates</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-xs-12">
-                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1500ms">
-                                <div class="media-left">
-                                    <div class="icon">
-                                        <i class="ion-ios-keypad-outline"></i>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Solid Support</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-xs-12">
-                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1800ms">
-                                <div class="media-left">
-                                    <div class="icon">
-                                        <i class="ion-ios-barcode-outline"></i>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Simple Installation</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
-                                </div>
-                            </div>
+            
+             <!--
+        ==================================================
+            Call To Action Section Start
+        ================================================== -->
+        <section id="call-to-action">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">¿QUIERE TRABAJAR CON NOSOTROS?</h1>
+                            <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Si tiene dudas o quiere asesorarse con nosotros no dude en contactarnos ,</br>es facil y sin costo, trataremos de contestale en la brevedad.</p>
+                            <a href="{{route('contact')}}" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contactenos</a>
                         </div>
                     </div>
+
                 </div>
-            </section> <!-- /#feature -->                         
+            </div>
+        </section>                        
 @stop

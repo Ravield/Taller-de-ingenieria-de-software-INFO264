@@ -86,11 +86,13 @@
                                 <a href="{{route('home')}}">Inicio</a>  es para que no sea necesario cambiar la navegacion si cambiamos la url-->
                             <!-- que se vea solo si esta logeado-->
                             @if(auth()->check())
+                                <li><a href="{{route('home')}}">Inicio</a></li>
                                 <li><a href="{{route('about')}}">Nosotros</a></li>
                                 <li><a href="{{route('service')}}">Servicios</a></li>
                                 <li><a href="{{route('contact')}}">Contacto</a></li>
                                 <li><a href="{{route('adini')}}">Adminstración</a></li>
                             @else
+                                <li><a href="{{route('home')}}">Inicio</a></li>
                                 <li><a href="{{route('about')}}">Nosotros</a></li>
                                 <li><a href="{{route('service')}}">Servicios</a></li>
                                 <li><a href="{{route('contact')}}">Contacto</a></li>
@@ -106,33 +108,15 @@
 
 <!-- directiva de blade que sirve para definir un espacio donde las demas vistas van a poder poner su contenido unico -->
 @yield('contenido')
-   <!--
-        ==================================================
-            Call To Action Section Start
-        ================================================== -->
-        <section id="call-to-action">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="block">
-                            <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">¿QUIERE TRABAJAR CON NOSOTROS?</h1>
-                            <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Si tiene dudas o quiere asesorarse con nosotros no dude en contactarnos ,</br>es facil y sin costo, trataremos de contestale en la brevedad.</p>
-                            <a href="{{route('contact')}}" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contactenos</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
 
             <footer id="footer">
                 <div class="container">
                     <div class="col-md-8">
-                        <p class="copyright">Copyright: <span>2015</span> . Design and Developed by <a href="http://www.Themefisher.com">Themefisher</a></p>
+                        <p class="copyright">Copyright: <span>2017</span> . Diseñado y Desarrollado por Elliot Ide </a></p>
                     </div>
                     <div class="col-md-4">
                         <!-- Social Media -->
-                        <ul class="social">
+                        <!--<ul class="social">
                             <li>
                                 <a href="http://wwww.fb.com/themefisher" class="Facebook">
                                     <i class="ion-social-facebook"></i>
@@ -153,7 +137,7 @@
                                     <i class="ion-social-googleplus"></i>
                                 </a>
                             </li>
-                        </ul>
+                        </ul>-->
                     </div>
                 </div>
             </footer> <!-- /#footer -->

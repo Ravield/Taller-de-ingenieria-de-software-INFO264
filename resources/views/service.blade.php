@@ -26,242 +26,125 @@
             </div>
         </section><!--/#Page header-->
 
-
-        <!--
-        ==================================================
-            Service Page Section  Start
-        ================================================== -->
-        <section id="service-page" class="pages service-page">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="block">
-                            <h2 class="subtitle wow fadeInUp animated" data-wow-delay=".3s" data-wow-duration="500ms">Áreas</h2>
-                            <p class="subtitle-des wow fadeInUp animated" data-wow-delay=".5s" data-wow-duration="500ms">Especializados en múltiples áreas de práctica.</p>
-                            <div class="container">
-                                <div class="col-md-4">
-                                    <div class="block wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="600ms">
-                                        <!--<i class="ion-ios-paper-outline"></i>-->
-                                        <h4>Civiles</h4>
-                                        <p>- Deudas.</p>
-                                        <p>- Arriendos.</p>
-                                        <p>- Tercerías.</p>
-                                        <p>- Juicios Ejecutivos, Ordinarios, Sumarios.</p>
-                                        <p>- Cambio de Nombre y Apellidos.</p>
+        <section id="feature">
+                <div class="container">
+                    <div class="section-heading">
+                        <h1 class="title wow fadeInDown" data-wow-delay=".2s">Áreas de servicio</h1>
+                        <p class="wow fadeInDown" data-wow-delay=".5s">
+                            Nos especializados en múltiples áreas de práctica en las cuales les podemos <br> ofrecer los siguientes servicios.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="ion-android-person"></i>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="block wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="800ms">
-                                        <!--<i class="ion-ios-pint-outline"></i>-->
-                                        <h4>Familia</h4>
-                                        <p>- Divorcios.</p>
-                                        <p>- Alimentos.</p>
-                                        <p>- Cuidado Personal.</p>
-                                        <p>- Compensación Económica.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="block wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="1s">
-                                        <!--<i class="ion-ios-paper-outline"></i>-->
-                                        <h4>Penal</h4>
-                                        <p>- Suspensión Condicional del Procedimiento.</p>
-                                        <p>- Acuerdos Reparatorios.</p>
-                                        <p>- Juicios Abreviados y Simplificados.</p>
-                                        <p>- Audiencias de preparación de Juicio Oral</p>
-                                        <p>- Juicio Oral</p>
-                                    </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Civiles.</h4>
+                                        <p>- Deudas.<br>- Arriendos.<br>- Tercerías.<br>
+                                        - Juicios Ejecutivos, Ordinarios, Sumarios.<br>
+                                        - Cambio de Nombre y Apellidos.</p>
                                 </div>
                             </div>
-                            <br><br>
-                            <div class="container">
-                                <div class="col-md-4">
-                                    <div class="block wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="1s">
-                                        <!--<i class="ion-ios-paper-outline"></i>-->
-                                        <h4>Laboral</h4>
-                                        <p>- Despidos Injustificados.</p>
-                                        <p>- Despido Indirecto.</p>
-                                        <p>- Defensa Juicio Laboral.</p>
-                                        <p>- Indemnizaciones por Accidentes Laborales.</p>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="ion-ios-people"></i>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="block wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="1.1s">
-                                        <!--<i class="ion-ios-paper-outline"></i>-->
-                                        <h4>Corte de Apelaciones</h4>
-                                        <p>- Recurso de Protección.</p>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Familia.</h4>
+                                    <p>- Divorcios.<br>
+                                    - Alimentos.<br>
+                                    - Cuidado Personal.<br>
+                                    - Compensación Económica.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="900ms">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="ion-ios-book"></i>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="block wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="1.1s">
-                                        <!--<i class="ion-ios-paper-outline"></i>-->
-                                        <h4>Comercial</h4>
-                                        <p>- Confección de escrituras de Sociedad.</p>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Penal.</h4>
+                                     <p>- Suspensión Condicional del Procedimiento.<br>
+                                    - Acuerdos Reparatorios.<br>
+                                    - Juicios Abreviados y Simplificados.<br>
+                                    - Audiencias de preparación de Juicio Oral<br>
+                                    - Juicio Oral<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1200ms">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="ion-briefcase"></i>
                                     </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Laboral.</h4>
+                                     <p>- Despidos Injustificados.<br>
+                                        - Despido Indirecto.<br>
+                                        - Defensa Juicio Laboral.<br>
+                                        - Indemnizaciones por Accidentes Laborales.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1500ms">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="ion-locked"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Corte de Apelaciones.</h4>
+                                    <p>- Recurso de Protección.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1800ms">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="ion-document-text"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Comercial.</h4>
+                                    <p>- Confección de escrituras de Sociedad.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section> <!-- /#feature --> 
 
-
-        <!--
+         <!--
         ==================================================
-            Works Section Start
+            Call To Action Section Start
         ================================================== -->
-        <!--<section class="works service-page">
-            <div class="container">
-                <h2 class="subtitle wow fadeInUp animated" data-wow-delay=".3s" data-wow-duration="500ms">Some Of Our Features Works</h2>
-                    <p class="subtitle-des wow fadeInUp animated" data-wow-delay=".5s" data-wow-duration="500ms">
-                        Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere <br> tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.
-                    </p>
-                <div class="row">
-                    <div class="col-sm-3">
-                         <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
-                            <div class="img-wrapper">
-                                <img src="timer/images/portfolio/item-1.jpg" class="img-responsive" alt="this is a title" >
-                                <div class="overlay">
-                                    <div class="buttons">
-                                        <a rel="gallery" class="fancybox" href="timer/images/portfolio/item-1.jpg">Demo</a>
-                                        <a target="_blank" href="">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <figcaption>
-                                <h4>
-                                    <a href="#">
-                                        Dew Drop
-                                    </a>
-                                </h4>
-                                <p>
-                                    Redesigne UI Concept
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <div class="img-wrapper">
-                                <img src="timer/images/portfolio/item-2.jpg" class="img-responsive" alt="this is a title" >
-                                <div class="overlay">
-                                    <div class="buttons">
-                                        <a rel="gallery" class="fancybox" href="timer/images/portfolio/item-2.jpg">Demo</a>
-                                        <a target="_blank" href="">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <figcaption>
-                                <h4>
-                                    <a href="#">
-                                        Bottle Mockup
-                                    </a>
-                                </h4>
-                                <p>
-                                    Lorem ipsum dolor sit.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <div class="img-wrapper">
-                                <img src="timer/images/portfolio/item-3.jpg" class="img-responsive" alt="" >
-                                <div class="overlay">
-                                    <div class="buttons">
-                                        <a rel="gallery" class="fancybox" href="timer/images/portfolio/item-3.jpg">Demo</a>
-                                        <a target="_blank" href="">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <figcaption>
-                                <h4>
-                                    <a href="#">
-                                        Table Design
-                                    </a>
-                                </h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
-                            <div class="img-wrapper">
-                                <img src="timer/images/portfolio/item-4.jpg" class="img-responsive" alt="" >
-                                <div class="overlay">
-                                    <div class="buttons">
-                                        <a rel="gallery" class="fancybox" href="timer/images/portfolio/item-4.jpg">Demo</a>
-                                        <a target="_blank" href="">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <figcaption>
-                                <h4>
-                                    <a href="#">
-                                        Make Up elements
-                                    </a>
-                                </h4>
-                                <p>
-                                    Lorem ipsum dolor.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </div>
-
-
-
-                </div>
-            </div>
-        </section>-->
-        <!--
-        ==================================================
-            Clients Section Start
-        ================================================== -->
-        <!--<section id="clients">
+        <section id="call-to-action">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="subtitle text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay=".3s">Our Happy Clinets</h2>
-                        <p class="subtitle-des text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay=".5s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, error.</p>
-                        <div id="clients-logo" class="owl-carousel">
-                            <div>
-                                <img src="timer/images/clients/logo-1.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="timer/images/clients/logo-2.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="timer/images/clients/logo-3.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="timer/images/clients/logo-4.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="timer/images/clients/logo-5.jpg" alt="">
-                            </div>
-                             <div>
-                                <img src="timer/images/clients/logo-1.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="timer/images/clients/logo-2.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="timer/images/clients/logo-3.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="timer/images/clients/logo-4.jpg" alt="">
-                            </div>
-                            <div>
-                                <img src="timer/images/clients/logo-5.jpg" alt="">
-                            </div>
+                        <div class="block">
+                            <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">¿QUIERE TRABAJAR CON NOSOTROS?</h1>
+                            <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Si tiene dudas o quiere asesorarse con nosotros no dude en contactarnos ,</br>es facil y sin costo, trataremos de contestale en la brevedad.</p>
+                            <a href="{{route('contact')}}" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contactenos</a>
                         </div>
                     </div>
+
                 </div>
             </div>
-        </section>-->
+        </section>
 @stop
