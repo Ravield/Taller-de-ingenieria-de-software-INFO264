@@ -92,7 +92,7 @@
                                 <li><a href="{{route('contact')}}">Contacto</a></li>
                                 <li><a href="{{route('adini')}}">Adminstración</a></li>
                             @else
-                                <li><a href="{{route('home')}}">Inicio</a></li>
+                                <li><a href="/">Inicio</a></li>
                                 <li><a href="{{route('about')}}">Nosotros</a></li>
                                 <li><a href="{{route('service')}}">Servicios</a></li>
                                 <li><a href="{{route('contact')}}">Contacto</a></li>
