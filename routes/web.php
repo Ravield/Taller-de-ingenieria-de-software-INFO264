@@ -39,6 +39,9 @@ Route::get('servicio', function () {
     return view('service');
 })->name('service');
 
+
+//Route::post('causas', array('uses' =>'CausesController@addCause'))
+
 Route::post('messages', function(){
 
 	//enviar un correo al dueño de la pagina

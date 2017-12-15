@@ -21,7 +21,7 @@ class AdminMiddleware
           return redirect('login');
 
         if(auth()->user()->role != 0) //not and admin
-          return redirect('clientes');
+          return redirect('clientes');//NANI
         //la solicitud se pase a lo que contiene y plt siga su recorrido normal
         return $next($request);
     }

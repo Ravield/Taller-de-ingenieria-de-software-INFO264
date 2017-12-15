@@ -15,7 +15,7 @@
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="icon" type="image/png" href="images/favicon.png">
-        <title>Mattar & asociados</title>
+        <title>Mattar & Asociados</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="author" content="">
@@ -81,7 +81,7 @@
 
                     <!-- logo -->
                     <div class="navbar-brand">
-                        <a href="index.html" >
+                        <a href="/">
                             <img src="timer/images/logomya.png" alt="" >
                         </a>
                     </div>
