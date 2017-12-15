@@ -10,15 +10,15 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="block">
-                            <h2>Contact</h2>
+                            <h2>Contacto</h2>
                             <ol class="breadcrumb">
                                 <li>
                                     <a href="index.html">
                                         <i class="ion-ios-home"></i>
-                                        Home
+                                        Inicio
                                     </a>
                                 </li>
-                                <li class="active">Contact</li>
+                                <li class="active">Contacto</li>
                             </ol>
                         </div>
                     </div>
@@ -42,33 +42,32 @@
                     @endif
                     <div class="col-md-6">
                         <div class="block">
-                            <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Contact With Me</h2>
+                            <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Contactenos</h2>
                             <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, ea!
-                                 consectetur adipisicing elit. Dolore, ea!
+                                Escriba su consulta o cuentenos su situacion, le responderemos a la brevedad
                             </p>
                             <div class="contact-form">
                                 <form id="contact-form" method="post" action="{{route ('messages')}}" role="form">
                                 {{ csrf_field() }}
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
-                                        <input type="text" placeholder="Your Name" class="form-control" name="name" id="name" required>
+                                        <input type="text" placeholder="Nombre" class="form-control" name="name" id="name" required>
                                     </div>
 
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
-                                        <input type="email" placeholder="Your Email" class="form-control" name="email" id="email" required>
+                                        <input type="email" placeholder="Email" class="form-control" name="email" id="email" required>
                                     </div>
 
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
-                                        <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject" required>
+                                        <input type="text" placeholder="Asunto" class="form-control" name="subject" id="subject" required>
                                     </div>
 
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
-                                        <textarea rows="6" placeholder="Message" class="form-control" name="body" id="body" required></textarea>
+                                        <textarea rows="6" placeholder="Cuentenos su caso" class="form-control" name="body" id="body" required></textarea>
                                     </div>
 
 
                                     <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
-                                        <input type="submit" id="contact-submit" class="btn btn-default btn-send" value="Send Message">
+                                        <input type="submit" id="contact-submit" class="btn btn-default btn-send" value="Enviar Consulta">
                                     </div>
 
                                 </form>
@@ -77,9 +76,9 @@
                     </div>
                     <div class="col-md-6">
                          <div class="map-area">
-                            <h2 class="subtitle  wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Find Us</h2>
+                            <h2 class="subtitle  wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Encuentrenos</h2>
                             <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
-                                Si aute quis eu proident o cupidatat ne anim nescius, et est praesentibus, o quorum vidisse expetendis, nostrud eram quibusdam ad nam nostrud ubi.
+                                Nuestra oficina se encuentra ubicada en
 
                             </p>
                             <div class="map">
@@ -90,25 +89,19 @@
                     </div>
                 </div>
                 <div class="row address-details">
-                    <div class="col-md-3">
-                        <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".3s">
-                            <i class="ion-ios-location-outline"></i>
-                            <h5>125 , Kings Street,Melbourne <br>United Kingdom,600562</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".5s">
                             <i class="ion-ios-location-outline"></i>
-                            <h5>125 , Kings Street,Melbourne <br>United Kingdom,600562</h5>
+                            <h5>Arauco 340<br>Valdivia, Región de los Ríos</h5>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="email wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".7s">
                             <i class="ion-ios-email-outline"></i>
                             <p>support@themefisher.com<br>support@themefisher.com</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="phone wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".9s">
                             <i class="ion-ios-telephone-outline"></i>
                             <p>+07 052 245 022<br>+07 999 999 999</p>
