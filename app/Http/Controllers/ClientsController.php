@@ -12,4 +12,17 @@ class ClientsController extends Controller
       $clientes = Client::orderBy('nombre')->get();
       return view('adclient',compact('clientes'));
   }
+
+  public function crearCliente(Request $req){
+    $data = $req->all();
+    $cli = Cliente::create([
+    'nombre' => $data['nombre'],
+    'rut' => $data['rut'],
+    'direccion' => $data['direccion'],
+    'telefono' => $data['telefono'],
+    'correo' => $data['correo'],
+    ]);
+    $cli->save();
+    return Response::json($cli);
+  }
 }
