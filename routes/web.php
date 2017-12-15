@@ -83,7 +83,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/verclientes','ClientsController@showClients')->name('adclient');
 Route::get('/causas','CausesController@showCauses')->name('cause');
 
-Route::post('crearclientes', array('uses' =>'ClientsController@addClients'));
+Route::post('/crearclientes', array('uses' =>'Clients@agregarMaterial'));
 
 /*
 //--LOAD THE VIEW--//
