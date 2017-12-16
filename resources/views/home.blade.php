@@ -20,7 +20,7 @@
                                 </section> <!-- cd-intro -->
                                 <!-- /.slider -->
                                 <h2 class="wow fadeInUp animated" data-wow-delay=".6s" >
-                                    Con m, I've occupied many roles including digital design director,<br> web designer and developer. This site showcases some of my work.
+                                    Mattar & Asociados es un Estudio Jurídico cuyos socios fundadores son los abogados<br> Gabriela Hidalgo Sáez, Pablo Obreque Pardo, Camila Mattar Hazbun, se asociaron el objetivo de potenciar eficientemente sus conocimientos para así ofrecer un servicio de calidad a la comunidad Valdiviana.
                                 </h2>
                             </div>
                         </div>
@@ -37,10 +37,7 @@
                                 SOBRE NOSOTROS
                                 </h2>
                                 <p>
-                                    Hello, I’m a UI/UX Designer & Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University.And scrambled it to make a type specimen book. It has survived not only five centuries
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, adipisci voluptatum repudiandae, natus impedit repellat aut officia illum at assumenda iusto reiciendis placeat. Temporibus, vero.
+                                    Somos un estudio comprometido con la excelencia prestando servicios en las áreas como comerciales, empresarial, laborales y familia. Nuestra misión se define en torno a los conceptos de excelencia, confianza y eficiencia procurando entregar a nuestros clientes una atención cercana, profesional y oportuna.
                                 </p>
                             </div>
                             
