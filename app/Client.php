@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Client extends Model
 {
   protected $primaryKey = 'id';//indicar id
-  protected $fillable = ['id','nombre','rut','direccion','telefono','correo'];
+  protected $fillable = ['nombre','rut','direccion','telefono','correo'];
 
 public function cause()
   {
