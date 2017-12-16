@@ -400,7 +400,20 @@
           </ul>
         </li>
 
-        <li><a href="causas"><i class="fa fa-book"></i><span>Agregar Causas</span></a></li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-book"></i>
+            <span>Causas</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="causa"><i class="fa fa-circle-o"></i>Ver Causas</a></li>
+            <li><a href="crearcausas"><i class="fa fa-circle-o"></i>Crear Causas</a></li>
+          </ul>
+        </li>
 
         <li class="treeview">
           <a href="#">

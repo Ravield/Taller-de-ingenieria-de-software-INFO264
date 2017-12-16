@@ -1,16 +1,16 @@
 @extends('layouts.adminLayout')
 
 @section('content')
-{!! Form::open(['url' => 'crearclientes']) !!}
+{!! Form::open(['url' => 'crearcausas']) !!}
 
 <div class="content-wrapper">
   <section class="content-header">
     <h1>Clientes
-      <small>Gestion de los clientes</small>
+      <small>Gestión de Causas</small>
     </h1>
     <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
-      <li class="active">Clientes</li>
+      <li><a href="#"><i class="fa fa-home"></i>Inicio</a></li>
+      <li class="active">Causas</li>
     </ol>
   </section>
 
@@ -18,7 +18,7 @@
 <section class="content">
   <div class="box box-primary">
         <div class="box-header with-border">
-          <h3 class="box-title">Crear Cliente</h3>
+          <h3 class="box-title">Crear Causas</h3>
         </div>
         <div class="box-body">
     <div class="form-group">
@@ -33,22 +33,14 @@
     {!! Form::text('nombre', null, ['class' => 'form-control']) !!} <!-- input -->
     </div>
     <div class="form-group">
-    {!! Form::label('rut', 'Rut', ['class' => 'control-label']) !!}
-    {!! Form::text('rut', null, ['class' => 'form-control']) !!} <!-- input -->
+    {!! Form::label('tipo', 'Tipo', ['class' => 'control-label']) !!}
+    {!! Form::text('tipo', null, ['class' => 'form-control']) !!} <!-- input -->
     </div>
     <div class="form-group">
-    {!! Form::label('direccion', 'Dirección', ['class' => 'control-label']) !!}
-    {!! Form::text('direccion', null, ['class' => 'form-control']) !!} <!-- input -->
+    {!! Form::label('resumen', 'Resumen', ['class' => 'control-label']) !!}
+    {!! Form::text('resumen', null, ['class' => 'form-control']) !!} <!-- input -->
     </div>
-    <div class="form-group">
-    {!! Form::label('telefono', 'Telefono', ['class' => 'control-label']) !!}
-    {!! Form::text('telefono', null, ['class' => 'form-control']) !!} <!-- input -->
-    </div>
-    <div class="form-group">
-    {!! Form::label('correo', 'Correo', ['class' => 'control-label']) !!}
-    {!! Form::text('correo', null, ['class' => 'form-control']) !!} <!-- input -->
-    </div>
-    {!! Form::submit('Crear Nuevo Cliente', ['class' => 'btn btn-primary']) !!}
+    {!! Form::submit('Crear Nueva Causa', ['class' => 'btn btn-primary']) !!}
     {!! Form::close() !!}
 </div>
 </section>

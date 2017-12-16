@@ -85,4 +85,7 @@ Route::get('verclientes','ClientsController@index')->name('adclient');
 Route::get('crearclientes','ClientsController@create')->name('createclient');
 Route::post('crearclientes', 'ClientsController@store')->name('createclient');
 
-Route::get('/causas','CausesController@showCauses')->name('cause');
+//Rutas causas
+Route::get('causa','CausesController@index')->name('cause');
+Route::get('crearcausas','CausesController@create')->name('createcause');
+Route::post('crearcausas', 'CausesController@store')->name('createcause');
