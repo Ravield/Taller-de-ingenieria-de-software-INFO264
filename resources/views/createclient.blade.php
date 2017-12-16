@@ -1,9 +1,9 @@
 @extends('layouts.adminLayout')
 
 @section('content')
-{!! Form::open([
+{{ Form::open([
     'route' => 'createclient'
-]) !!}
+])}}
 
 <div class="content-wrapper">
   <section class="content-header">
