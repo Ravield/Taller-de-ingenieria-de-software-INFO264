@@ -38,12 +38,12 @@
                     </div>
                     <div class="col-md-6">
                         <div class="block">
-                            <h3 class="subtitle wow fadeInUp" data-wow-delay=".3s" data-wow-duration="500ms">Por que nos diferenciamos</h3>
+                            <h3 class="subtitle wow fadeInUp" data-wow-delay=".3s" data-wow-duration="500ms">¿Por qué nos diferenciamos?</h3>
                             <p  class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms">
                                 
                             </p>
                             <p  class="wow fadeInUp" data-wow-delay=".7s" data-wow-duration="500ms">
-                                Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+                                Trabajamos por el bien común de nuestros clientes , esperando alcanzar sus metas de la forma más profesional posible, cumpliendo altos estándares de eticos. 
                             </p>
                             
                         </div>
@@ -62,26 +62,27 @@
                 <div class="row">
                     <div class="block about-feature-1 wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">
                         <h2>
-                        Por que elegirnos
+                        Nuestra filosofia
                         </h2>
                         <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas.
+                            Nos hemos comprometido con la excelencia profesional, es nuestro deber como estudio seguir los mas altos estandares eticos en el ejercicio del derecho que es una actividad honorable y enriquecedora.
                         </p>
                     </div>
                     <div class="block about-feature-2 wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
                         <h2 class="item_title">
-                        Que gana con nosotros
+                        Ambicion por desafios
                         </h2>
                         <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas.
+                            Tenemos un estilo de colaboración y de trabajo en equipo asequible y abierto que combina la efectividad con la cohesión y la colegiabilidad de nuestros abogados, siempre aspirando a nuevos horizontes.
                         </p>
                     </div>
                     <div class="block about-feature-3 wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".7s">
                         <h2 class="item_title">
-                        Meet The Energy
+                        Comprometidos con usted
                         </h2>
                         <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas.
+                            Nuestro compromiso es ayudar a nuestros clientes a alcanzar sus metas ofreciendo nuestras asesorías
+                            jurídicas con un enfoque comercial de la más alta calidad. Nuestros clientes son nuestra primera prioridad.
                         </p>
                     </div>
                 </div>
