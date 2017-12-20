@@ -21,7 +21,12 @@
           <h3 class="box-title">Crear Cliente</h3>
         </div>
         <div class="box-body">
-    <div class="form-group">
+    @if(Session::has('flash_message'))
+
+      <div class="alert alert-success">
+      {{ Session::get('flash_message') }}
+      </div>
+    @endif
     @if($errors->any())
           <div class="alert alert-danger">
               @foreach($errors->all() as $error)
@@ -29,11 +34,16 @@
               @endforeach
           </div>
     @endif
+    <div class="form-group">
     {!! Form::label('nombre', 'Nombre', ['class' => 'control-label']) !!}
     {!! Form::text('nombre', null, ['class' => 'form-control']) !!} <!-- input -->
     </div>
     <div class="form-group">
-    {!! Form::label('rut', 'Rut', ['class' => 'control-label']) !!}
+    {!! Form::label('apellido', 'Apellido', ['class' => 'control-label']) !!}
+    {!! Form::text('apellido', null, ['class' => 'form-control']) !!} <!-- input -->
+    </div>
+    <div class="form-group">
+    {!! Form::label('rut', 'Rut (Sin puntos ni guion)', ['class' => 'control-label']) !!}
     {!! Form::text('rut', null, ['class' => 'form-control']) !!} <!-- input -->
     </div>
     <div class="form-group">

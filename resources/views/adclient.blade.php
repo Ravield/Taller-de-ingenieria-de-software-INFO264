@@ -25,6 +25,7 @@
       <table class="table table-hover">
         <thead>
           <th>Nombre</th>
+          <th>Apellido</th>
           <th>Rut</th>
           <th>Dirección</th>
           <th>Telefono</th>
@@ -34,6 +35,7 @@
           @foreach($clientes as $cliente)
           <tr>
             <td>{{$cliente->nombre}}</td>
+            <td>{{$cliente->apellido}}</td>
             <td>{{$cliente->rut}}</td>
             <td>{{$cliente->direccion}}</td>
             <td>{{$cliente->telefono}}</td>

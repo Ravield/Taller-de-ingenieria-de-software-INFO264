@@ -4,7 +4,7 @@ namespace App\Http\Controllers; //+ccontroller
 
 use App\Client;
 use Illuminate\Http\Request;
-
+use Session;
 class ClientsController extends Controller
 {
     /**
@@ -36,13 +36,14 @@ class ClientsController extends Controller
      */
     public function store(Request $request)
     {
-      $this->validate($request, [
+      $this->validate($request, [  //aqui tengo la validacion que soy gilo
         'nombre' => 'required',
-        'rut' => 'required',
+        'apellido' => 'required',
+        'rut' => 'required|unique:clients',
         'correo' => 'required|email',
       ]);
       Client::create($request->all());
-
+      Session::flash('flash_message', 'Se ha creado exitosamente un cliente');
       return redirect()->back();
     }
 

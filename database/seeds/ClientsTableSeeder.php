@@ -13,7 +13,8 @@ class ClientsTableSeeder extends Seeder
     public function run()
     {
       Client::create([
-        'nombre' => 'Marco Araya',
+        'nombre' => 'Marco',
+        'apellido' => 'Araya',
         'rut' => '188878474',
         'direccion' => 'Pobl. Miramar, Niebla',
         'telefono' => '985993273',
@@ -22,7 +23,8 @@ class ClientsTableSeeder extends Seeder
       ]);
 
       Client::create([
-        'nombre' => 'Francisco Gonzalez',
+        'nombre' => 'Francisco',
+        'apellido' => 'Gonzalez',
         'rut' => '187845444',
         'direccion' => 'Clemente Escobar 4010',
         'telefono' => '974332180',
