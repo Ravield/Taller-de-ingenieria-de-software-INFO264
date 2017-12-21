@@ -11,6 +11,8 @@
         <small>Gestion de los clientes</small>
       </h1>
       <!--<div class="btn">
+
+        
       	<button type="button" class="btn btn-primary btn-md">Agregar</button>
       </div>-->
       <ol class="breadcrumb">
