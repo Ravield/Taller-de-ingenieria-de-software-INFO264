@@ -21,10 +21,6 @@ class CreateClientsTable extends Migration
             $table->string('direccion');
             $table->integer('telefono');
             $table->string('correo');
-            //foreign key
-            //$table->integer('cause_id')->unsigned();
-            //$table->foreign('cause_id')->references('id')->on('causes');
-
             $table->timestamps();
         });
     }

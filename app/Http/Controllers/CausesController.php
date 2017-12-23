@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Cause;
+use App\Client;
 class CausesController extends Controller
 {
     /**
@@ -24,6 +25,7 @@ class CausesController extends Controller
      */
     public function create()
     {
+        $clientes = Cause::orderBy('nombre')->get();
         return view('createcause');
     }
 
@@ -38,7 +40,7 @@ class CausesController extends Controller
       $this->validate($request, [
         'nombre' => 'required',
       ]);
-      
+
       Cause::create($request->all());
 
       return redirect()->back();
