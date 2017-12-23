@@ -27,7 +27,7 @@ class CausesController extends Controller
     public function create()
     {
         $clientes = Client::select(
-            DB::raw("CONCAT(nombre,' ',apellido) AS name"),'id')
+            DB::raw("CONCAT(nombre,' ',apellido) AS name"),'rut')
             ->orderBy('name')
             ->pluck('name', 'rut');
         return view('createcause',compact('clientes'));
