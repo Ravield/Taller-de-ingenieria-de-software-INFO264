@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Cause;
+use App\Client;
+use DB;
 class CausesController extends Controller
 {
     /**
@@ -24,7 +26,13 @@ class CausesController extends Controller
      */
     public function create()
     {
-        return view('createcause');
+        //$clientes = Client::orderBy('nombre')->get();
+        $clientes = Client::select(
+            DB::raw("CONCAT(nombre,' ',apellido) AS name"),'id')
+            ->orderBy('name')
+            ->pluck('name', 'id');
+        //$clientes = Client::pluck('nombre','id');
+        return view('createcause',compact('clientes'));
     }
 
     /**
@@ -36,7 +44,8 @@ class CausesController extends Controller
     public function store(Request $request)
     {
       $this->validate($request, [
-        'nombre' => 'required',
+        'tipo' => 'required',
+        'resumen' => 'required',
       ]);
       
       Cause::create($request->all());

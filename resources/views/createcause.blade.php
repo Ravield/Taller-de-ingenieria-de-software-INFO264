@@ -30,7 +30,8 @@
           </div>
     @endif
     {!! Form::label('nombre', 'Nombre', ['class' => 'control-label']) !!}
-    {!! Form::text('nombre', null, ['class' => 'form-control']) !!} <!-- input -->
+    {!! Form::select('nombre', $clientes, ['class' => 'form-control'] ) !!}
+    <!-- {!! Form::text('nombre', null, ['class' => 'form-control']) !!}  -->
     </div>
     <div class="form-group">
     {!! Form::label('tipo', 'Tipo', ['class' => 'control-label']) !!}
