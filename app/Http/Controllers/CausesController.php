@@ -26,12 +26,10 @@ class CausesController extends Controller
      */
     public function create()
     {
-        //$clientes = Client::orderBy('nombre')->get();
         $clientes = Client::select(
             DB::raw("CONCAT(nombre,' ',apellido) AS name"),'id')
             ->orderBy('name')
-            ->pluck('name', 'id');
-        //$clientes = Client::pluck('nombre','id');
+            ->pluck('name', 'rut');
         return view('createcause',compact('clientes'));
     }
 
