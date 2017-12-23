@@ -31,7 +31,6 @@
     @endif
     {!! Form::label('nombre', 'Nombre', ['class' => 'control-label']) !!}
     {!! Form::select('nombre', $clientes, ['class' => 'form-control'] ) !!}
-    <!-- {!! Form::text('nombre', null, ['class' => 'form-control']) !!}  -->
     </div>
     <div class="form-group">
     {!! Form::label('tipo', 'Tipo', ['class' => 'control-label']) !!}
