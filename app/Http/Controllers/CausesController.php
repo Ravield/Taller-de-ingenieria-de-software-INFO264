@@ -47,7 +47,7 @@ class CausesController extends Controller
         'tipo' => 'required',
         'resumen' => 'required',
       ]);
-      
+
       Cause::create($request->all());
 
       return redirect()->back();

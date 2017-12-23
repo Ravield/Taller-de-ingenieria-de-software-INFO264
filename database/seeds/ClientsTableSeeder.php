@@ -19,7 +19,6 @@ class ClientsTableSeeder extends Seeder
         'direccion' => 'Pobl. Miramar, Niebla',
         'telefono' => '985993273',
         'correo' => 'ravield1192@gmail.com',
-        //'cause_id' => 1//no creo que esto este bien
       ]);
 
       Client::create([
@@ -29,7 +28,6 @@ class ClientsTableSeeder extends Seeder
         'direccion' => 'Clemente Escobar 4010',
         'telefono' => '974332180',
         'correo' => 'fr4j4@gmail.com',
-        //'cause_id' => 2//no creo que esto este bien
       ]);
     }
 }

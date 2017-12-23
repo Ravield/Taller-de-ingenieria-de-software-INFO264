@@ -21,7 +21,6 @@
           <h3 class="box-title">Crear Causas</h3>
         </div>
         <div class="box-body">
-    <div class="form-group">
     @if($errors->any())
           <div class="alert alert-danger">
               @foreach($errors->all() as $error)
@@ -29,6 +28,12 @@
               @endforeach
           </div>
     @endif
+    <div class="form-group">
+    {!! Form::label('tipo', 'Cliente', ['class' => 'control-label']) !!}
+    {!! Form::select('age', ['Under 18', '19 to 30', 'Over 30'], ['class'=>'form-control'] ) !!}
+    <!--{!! Form::select('age', ['Under 18', '19 to 30', 'Over 30'], ['class'=>'form-control'] ) !!}}-->
+    </div>
+    <div class="form-group">
     {!! Form::label('nombre', 'Nombre', ['class' => 'control-label']) !!}
     {!! Form::select('nombre', $clientes, ['class' => 'form-control'] ) !!}
     </div>

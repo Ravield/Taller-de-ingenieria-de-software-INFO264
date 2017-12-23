@@ -14,18 +14,14 @@ class CreateCausesTable extends Migration
     public function up()
     {
         Schema::create('causes', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('nombre');
-            $table->string('tipo');
-            $table->string('resumen');
-
-            //causas asociadas a un usuario
-            //$table->integer('user_id')->unsigned();
-            //$table->foreign('user_id')->references('id')->on('users');
-
-            $table->timestamps();
-
-
+          $table->increments('id');
+          $table->string('nombre');
+          $table->string('tipo');
+          $table->string('resumen');
+          //causas asociadas a un usuario
+          $table->integer('client_id')->unsigned();
+          $table->foreign('client_id')->references('id')->on('clients');
+          $table->timestamps();
         });
     }
 
