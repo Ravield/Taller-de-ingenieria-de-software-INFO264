@@ -29,8 +29,12 @@
           </div>
     @endif
     <div class="form-group">
-    {!! Form::label('nombre', 'Nombre', ['class' => 'control-label']) !!}
-    {!! Form::select('nombre', $clientes, ['class' => 'form-control'] ) !!}
+    {!! Form::label('cliente', 'Cliente', ['class' => 'control-label']) !!}
+    {!! Form::select('client_rut', $clientes, ['class' => 'form-control'] ) !!}
+    </div>
+    <div class="form-group">
+    {!! Form::label('nombre', 'Nombre de Causa', ['class' => 'control-label']) !!}
+    {!! Form::text('nombre', null, ['class' => 'form-control']) !!} <!-- input -->
     </div>
     <div class="form-group">
     {!! Form::label('tipo', 'Tipo', ['class' => 'control-label']) !!}
@@ -39,6 +43,10 @@
     <div class="form-group">
     {!! Form::label('resumen', 'Resumen', ['class' => 'control-label']) !!}
     {!! Form::text('resumen', null, ['class' => 'form-control']) !!} <!-- input -->
+    </div>
+    <div class="form-group">
+    {!! Form::label('abogado', 'Abogado a Cargo', ['class' => 'control-label']) !!}
+    {!! Form::select('abogado', $abogados, ['class' => 'form-control'] ) !!}
     </div>
     {!! Form::submit('Crear Nueva Causa', ['class' => 'btn btn-primary']) !!}
     {!! Form::close() !!}

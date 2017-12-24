@@ -19,8 +19,11 @@ class CreateCausesTable extends Migration
           $table->string('tipo');
           $table->string('resumen');
           //causas asociadas a un usuario
-          $table->integer('client_id')->unsigned();
-          $table->foreign('client_id')->references('id')->on('clients');
+          $table->string('abogado');
+          $table->foreign('abogado')->references('name')->on('users');
+          $table->integer('client_rut')->unsigned();
+          $table->foreign('client_rut')->references('rut')->on('clients');
+
           $table->timestamps();
         });
     }

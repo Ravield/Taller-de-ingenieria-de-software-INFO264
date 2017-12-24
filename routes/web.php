@@ -64,6 +64,7 @@ Route::get('administracion', 'HomeController@adini')->name('adini');
 Route::get('verclientes', 'HomeController@adclient')->name('adclient');
 //Route::get('crearclientes', 'HomeController@createclient')->name('createclient');
 Route::get('causas', 'HomeController@cause')->name('cause');
+Route::post('verclientes', 'HomeController@adclient')->name('adclient');
 
 //Aplicar un middleware a un conjunto de rutas
 Route::group(['middleware' => 'admin', 'namespace' => 'Admin'], function(){
@@ -83,6 +84,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 //Rutas clientes
 Route::get('verclientes','ClientsController@index')->name('adclient');
 Route::get('crearclientes','ClientsController@create')->name('createclient');
+Route::post('verinfoclientes','ClientsController@infoclients');
 Route::post('crearclientes', 'ClientsController@store')->name('createclient');
 
 //Rutas causas

@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-//use App\User;
+use App\Client;
+use DB;
 class HomeController extends Controller
 {
     /**
@@ -35,11 +36,11 @@ class HomeController extends Controller
     {
         return view('createclient');
     }
-
+    /*
     public function adclient()
     {
         return view('adclient');
-    }
+    }*/
     public function cause()
     {
         //como le enviamos las variables a la vista

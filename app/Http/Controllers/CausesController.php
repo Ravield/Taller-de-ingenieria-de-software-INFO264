@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Cause;
 use App\Client;
+use App\User;
 use DB;
 class CausesController extends Controller
 {
@@ -30,7 +31,8 @@ class CausesController extends Controller
             DB::raw("CONCAT(nombre,' ',apellido) AS name"),'rut')
             ->orderBy('name')
             ->pluck('name', 'rut');
-        return view('createcause',compact('clientes'));
+        $abogados = User::orderBy('name')->get()->pluck('name','name');
+        return view('createcause',compact('clientes','abogados'));
     }
 
     /**
@@ -52,15 +54,21 @@ class CausesController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * Send data from Cause with 'rut' selected
      */
+    public function showCause(Request $req)
+    {
+       $data = $req->all();
+       $causa =Cause::where('rut', $data['select']);
+       return Response::json($causa);
+    }
+
+    /*
     public function show($id)
     {
         //
     }
+    */
 
     /**
      * Show the form for editing the specified resource.

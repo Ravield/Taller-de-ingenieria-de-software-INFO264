@@ -15,7 +15,7 @@ class ClientsTableSeeder extends Seeder
       Client::create([
         'nombre' => 'Marco',
         'apellido' => 'Araya',
-        'rut' => '188878474',
+        'rut' => 188878474,
         'direccion' => 'Pobl. Miramar, Niebla',
         'telefono' => '985993273',
         'correo' => 'ravield1192@gmail.com',
@@ -24,7 +24,7 @@ class ClientsTableSeeder extends Seeder
       Client::create([
         'nombre' => 'Francisco',
         'apellido' => 'Gonzalez',
-        'rut' => '187845444',
+        'rut' => 187845444,
         'direccion' => 'Clemente Escobar 4010',
         'telefono' => '974332180',
         'correo' => 'fr4j4@gmail.com',

@@ -3,8 +3,10 @@
 namespace App\Http\Controllers; //+ccontroller
 
 use App\Client;
+use App\Cause;
 use Illuminate\Http\Request;
 use Session;
+use DB;
 class ClientsController extends Controller
 {
     /**
@@ -14,8 +16,54 @@ class ClientsController extends Controller
      */
     public function index()
     {
-      $clientes = Client::orderBy('nombre')->get();
-      return view('adclient',compact('clientes'));
+      //$clientes = Client::orderBy('nombre')->get();
+      $clientes = Client::select(
+          DB::raw("CONCAT(nombre,' ',apellido) AS name"),'rut','created_at')
+          ->orderBy('created_at','DESC')
+          ->pluck('name', 'rut');
+      $cli =$clientes;
+      //obtenemos el primer cliente y mostramos su info
+      $cli = Client::orderBy('created_at','DESC')->first();
+      $causa = Cause::where('client_rut',$cli->rut)->first();
+
+      //si el cliente no ha hecho Causas entonces retorna una causa genérica
+      if($causa==null){
+        $causa = array(
+          'nombre' => 'Nombre de Causa',
+          'tipo' => 'Tipo de Causa',
+          'resumen' => 'Resumen',
+          'abogado' => 'Nombre de Abogado'
+        );
+        $causa = (object)$causa;
+      }
+
+      return view('adclient',compact('clientes','cli','causa'));
+    }
+
+    /*
+    * return view with client information & cause information
+    */
+    public function infoclients(Request $req)
+    {
+      $data = $req->all();
+      $clientes = Client::select(
+          DB::raw("CONCAT(nombre,' ',apellido) AS name"),'rut','created_at')
+          ->orderBy('created_at','DESC')
+          ->pluck('name', 'rut');
+
+      $cli = Client::where('rut', $data['rut'])->firstOrFail();
+      $causa = Cause::where('client_rut',$cli->rut)->first();
+      //si el cliente no registra causa, envia una causa genérica
+      if($causa==null){
+        $causa = array(
+          'nombre' => ' ',
+          'tipo' => ' ',
+          'resumen' => ' ',
+          'abogado' => ' '
+        );
+        $causa = (object)$causa;
+      }
+      return view('adclient',compact('clientes','cli','causa'));
     }
 
     /**

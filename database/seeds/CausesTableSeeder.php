@@ -16,14 +16,16 @@ class CausesTableSeeder extends Seeder
         'nombre' => 'Araya vs Lazo',
         'tipo' => 'Penal',
         'resumen' => 'Sin descripcion',
-        'client_id' => '1',//no creo que esto este bien
+        'client_rut' => 187845444,
+        'abogado' => 'Elliot Ide',
       ]);
 
       Cause::create([
         'nombre' => 'Gonzalez vs Hidalgo',
         'tipo' => 'Familia',
         'resumen' => 'Discusion por viaje',
-        'client_id' => '2',//no creo que esto este bien
+        'client_rut' => 188878474,
+        'abogado' => 'Elliot Ide',
       ]);
     }
 }
