@@ -91,3 +91,7 @@ Route::post('crearclientes', 'ClientsController@store')->name('createclient');
 Route::get('causa','CausesController@index')->name('cause');
 Route::get('crearcausas','CausesController@create')->name('createcause');
 Route::post('crearcausas', 'CausesController@store')->name('createcause');
+
+Route::get('docs','DocumentsController@index')->name('uploadoc');
+Route::post('store','DocumentsController@store')->name('uploadoc');//probando
+Route::get('show','DocumentsController@show')->name('uploadoc');//probando
