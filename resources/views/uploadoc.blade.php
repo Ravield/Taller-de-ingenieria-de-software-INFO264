@@ -1,7 +1,7 @@
 @extends('layouts.adminLayout')
 
 @section('content')
-{!! Form::open(['files' => true , 'action' => '/store']) !!}
+{!! Form::open(['files' => true, 'action' => 'DocumentsController@store']) !!}
 <div class="content-wrapper">
   <section class="content-header">
     <h1>Documentos
@@ -20,12 +20,12 @@
           <h3 class="box-title">Subir Documento</h3>
         </div>
         <div class="box-body">
-    @if(Session::has('flash_message'))
+    <!--@if(Session::has('flash_message'))
 
       <div class="alert alert-success">
       {{ Session::get('flash_message') }}
       </div>
-    @endif
+    @endif-->
     @if($errors->any())
           <div class="alert alert-danger">
               @foreach($errors->all() as $error)

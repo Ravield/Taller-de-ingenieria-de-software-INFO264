@@ -36,18 +36,16 @@ class DocumentsController extends Controller
      */
     public function store(Request $request)
     {
-      if ($request->hasFile('file')){
-        //$request->file('file');
-        return $request->file = store('public/upload');
-        //return $request->image->extension();  //extension, path
-        //return $request->image->store('public');
-        //return $request->file->storeAs('public','nombre.pdf');
-        //return Storage::putFile('public',$request->file('image'));
+      if ($request->hasFile('doc')){
+        $docname = $request->doc->getClientOriginalName();
+        $docsize = $request->doc->getClientSize();
+        $request->doc->storeAs('public',$docname);
+        $doc = new Document;
+        $doc->nombre = $docname;
+        $doc->tamaño = $docsize;
+        $doc->save();
+        return redirect()->back();
       }
-      /*}
-      else{
-        return 'No file selected';
-      }*/
     }
 
     /**
