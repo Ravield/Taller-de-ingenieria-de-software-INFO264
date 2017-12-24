@@ -427,7 +427,16 @@
             <li><a href="/usuarios"><i class="fa fa-circle-o"></i>Usuarios</a></li>
           </ul>
         </li>
-      </ul>
+      <li>
+      <a href="docs">
+        <i class="fa fa-book"></i>
+        <span>Documentos</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+    </li>
+
     </section>
     <!-- /.sidebar -->
   </aside>
