@@ -40,6 +40,8 @@
       {!! Form::submit('Subir Documento', ['class' => 'btn btn-primary']) !!}
       {!! Form::close() !!}
     </div>
+
+    
 </section>
 </div>
 
