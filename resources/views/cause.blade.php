@@ -10,23 +10,25 @@
         Causas
         <small>Gestion de Causas</small>
       </h1>
-      <!--<div class="btn">
-      	<button type="button" class="btn btn-primary btn-md">Agregar</button>
-      </div>-->
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
-        <!--<li><a href="#">Examples</a></li>-->
         <li class="active">Causas</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
+      <center>
+          <h3>Causas de todos</h3>
+      </center>
       <table class="table table-hover">
         <thead>
           <th>Nombre</th>
           <th>Tipo</th>
           <th>Resumen</th>
+          <th>Rut Cliente</th>
+          <th>Abogado</th>
+          <th>Acción</th>
         </thead>
         <tbody>
           @foreach($causas as $causa)
@@ -34,6 +36,9 @@
             <td>{{$causa->nombre}}</td>
             <td>{{$causa->tipo}}</td>
             <td>{{$causa->resumen}}</td>
+            <td>{{$causa->client_rut}}</td>
+            <td>{{$causa->abogado}}</td>
+            <td><a href="{{route('editcause3',$causa->id)}}" class="btn btn-info">Editar</a></td> 
           </tr>
           @endforeach
         </tbody>

@@ -78,7 +78,9 @@ class CausesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $causa = Cause::where('id',$id)->get();
+        $cli = Client::where('rut',$causa[0]->client_rut)->get();
+        return view('editcause3',compact('causa','cli'));
     }
 
     /**

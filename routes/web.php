@@ -90,6 +90,8 @@ Route::post('crearclientes', 'ClientsController@store')->name('createclient');
 //Rutas causas
 Route::get('causa','CausesController@index')->name('cause');
 Route::get('crearcausas','CausesController@create')->name('createcause');
+Route::get('editarcausa/{id}','CausesController@edit')->name('editcause3');
+Route::get('updatecause/{id}','CausesController@update')->name('updatecause');
 Route::post('crearcausas', 'CausesController@store')->name('createcause');
 
 //docs
