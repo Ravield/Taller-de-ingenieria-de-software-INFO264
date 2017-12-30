@@ -36,12 +36,13 @@
     <div class="form-group">
       {{csrf_field()}}
       {!! Form::label('nombre', 'Nombre', ['class' => 'control-label']) !!}
-      {!! Form::file('doc', null, ['class' => 'form-control']) !!}<br>
+      <!--{!! Form::file('doc', null, ['class' => 'form-control']) !!}<br>-->
+      <input type = "file" class = "form-control" name="doc[]" multiple><br> <!-- arreglin-->
       {!! Form::submit('Subir Documento', ['class' => 'btn btn-primary']) !!}
       {!! Form::close() !!}
     </div>
 
-    
+
 </section>
 </div>
 

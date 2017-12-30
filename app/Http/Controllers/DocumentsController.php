@@ -37,13 +37,16 @@ class DocumentsController extends Controller
     public function store(Request $request)
     {
       if ($request->hasFile('doc')){
-        $docname = $request->doc->getClientOriginalName();
-        $docsize = $request->doc->getClientSize();
-        $request->doc->storeAs('public',$docname);
-        $doc = new Document;
-        $doc->nombre = $docname;
-        $doc->tamaño = $docsize;
-        $doc->save();
+        foreach($request->doc as $doc){
+          $docname = $doc->getClientOriginalName();
+          $docsize = $doc->getClientSize();
+          $doc->storeAs('public',$docname);
+
+          $docModel = new Document;
+          $docModel->nombre = $docname;
+          $docModel->tamaño = $docsize;
+          $docModel->save();
+        }
         return redirect()->back();
       }
     }
@@ -63,9 +66,23 @@ class DocumentsController extends Controller
         };*/
         //return Storage::lastModified('public/nombre.pdf');//size
         //return Storage::copy('public/nombre.pdf','nombre.pdf');//copy, move
-        /*if (Storage::delete('public/nombre.pdf')){
+        if (Storage::delete('public/nombre.pdf')){
           return 'File is deleted.';
-        }*/
+        }
+    }
+
+    public function getDoc($docname)
+    {
+      //try
+      //{
+        return response()->download(Storage_path('app/public/'.$docname,null,[],null));
+
+      //}
+      //catch (\Exception $e)
+      //{
+        //return "File Not Found";
+      //}
+
     }
 
     /**
