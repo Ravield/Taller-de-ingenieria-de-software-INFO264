@@ -12,7 +12,7 @@
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
-        <li class="active">Causas</li>
+        <li class="active"><i class="fa fa-book"></i>Causas</li>
       </ol>
     </section>
 
@@ -37,16 +37,16 @@
                 <th>Acción</th>
               </thead>
               <tbody>
-                
+
                 @foreach($causas as $causa)
                 <tr>
-                  <td>{{$causa->nombre}}</td>
-                  <td>{{$causa->tipo}}</td>
-                  <td>{{$causa->resumen}}</td>
-                  <td>{{$causa->client_rut}}</td>
-                  <td>{{$causa->abogado}}</td>
+                  <td width="20%">{{$causa->nombre}}</td>
+                  <td width="15%">{{$causa->tipo}}</td>
+                  <td width="35%">{{$causa->resumen}}</td>
+                  <td width="10%">{{$causa->client_rut}}</td>
+                  <td width="15%">{{$causa->abogado}}</td>
                   <!--<td><a href="{{route('editcause3',$causa->id)}}" class="btn btn-info">Editar</a></td> -->
-                  <td>
+                  <td width="5%">
                     <form id="{{$causa->id}}" action="{{route('editcause3')}}" method="GET">
                       <input type="hidden" name="id" value={{$causa->id}} /></form>
                     <input form="{{$causa->id}}" type="submit" class="btn btn-primary" value="Editar" />
