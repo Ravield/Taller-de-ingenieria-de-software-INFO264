@@ -16,33 +16,47 @@
       </ol>
     </section>
 
+    {!! Form::open(['url' => 'vercausaabogado', 'method' => 'GET']) !!}
     <!-- Main content -->
     <section class="content">
-      <center>
-          <h3>Causas de todos</h3>
-      </center>
-      <table class="table table-hover">
-        <thead>
-          <th>Nombre</th>
-          <th>Tipo</th>
-          <th>Resumen</th>
-          <th>Rut Cliente</th>
-          <th>Abogado</th>
-          <th>Acción</th>
-        </thead>
-        <tbody>
-          @foreach($causas as $causa)
-          <tr>
-            <td>{{$causa->nombre}}</td>
-            <td>{{$causa->tipo}}</td>
-            <td>{{$causa->resumen}}</td>
-            <td>{{$causa->client_rut}}</td>
-            <td>{{$causa->abogado}}</td>
-            <td><a href="{{route('editcause3',$causa->id)}}" class="btn btn-info">Editar</a></td> 
-          </tr>
-          @endforeach
-        </tbody>
-      </table>
+      <div class="box box-primary">
+          <div class="box-header with-border">
+              <h3 class="box-title">Causas de</h3>
+              {!! Form::select('abogado', $abogados, ['class' => 'form-control'] ) !!}
+              {!! Form::submit('Ver Causas', ['class' => 'btn btn-primary']) !!}
+              {!! Form::close() !!}
+          </div>
+          <div class="box-body">
+            <table class="table table-hover">
+              <thead>
+                <th>Nombre</th>
+                <th>Tipo</th>
+                <th>Resumen</th>
+                <th>Rut Cliente</th>
+                <th>Abogado</th>
+                <th>Acción</th>
+              </thead>
+              <tbody>
+                
+                @foreach($causas as $causa)
+                <tr>
+                  <td>{{$causa->nombre}}</td>
+                  <td>{{$causa->tipo}}</td>
+                  <td>{{$causa->resumen}}</td>
+                  <td>{{$causa->client_rut}}</td>
+                  <td>{{$causa->abogado}}</td>
+                  <!--<td><a href="{{route('editcause3',$causa->id)}}" class="btn btn-info">Editar</a></td> -->
+                  <td>
+                    <form id="{{$causa->id}}" action="{{route('editcause3')}}" method="GET">
+                      <input type="hidden" name="id" value={{$causa->id}} /></form>
+                    <input form="{{$causa->id}}" type="submit" class="btn btn-primary" value="Editar" />
+                  </td>
+                  {!! Form::close() !!}
+                </tr>
+                @endforeach
+              </tbody>
+            </table>
+          </div>
     </section>
   </div>
 

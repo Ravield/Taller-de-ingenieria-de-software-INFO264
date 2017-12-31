@@ -16,8 +16,11 @@ class CausesController extends Controller
      */
     public function index()
     {
-      $causas = Cause::orderBy('nombre')->get();
-      return view('cause',compact('causas'));
+      $abogados = User::orderBy('name')->get(); //accedemos al primer nombre de los abogados
+      $causas = Cause::where('abogado',$abogados[0]->name) //cargamos las causas de este abogado
+                ->orderBy('created_at', 'DESC')->get();
+      $abogados = User::orderBy('name')->pluck('name','name'); //cargamos los nombres de los abogados para el select
+      return view('cause',compact('causas','abogados'));
     }
 
     /**
@@ -63,12 +66,15 @@ class CausesController extends Controller
        return Response::json($causa);
     }
 
-    /*
-    public function show($id)
+
+    public function show(Request $req)
     {
-        //
+        $data = $req->all();
+        $causas = Cause::where('abogado',$data['abogado'])->orderBy('created_at','DESC')->get();
+        $abogados = User::orderBy('name')->pluck('name','name');
+        return view('cause',compact('causas','abogados'));
     }
-    */
+
 
     /**
      * Show the form for editing the specified resource.
@@ -76,9 +82,10 @@ class CausesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $req)
     {
-        $causa = Cause::where('id',$id)->get();
+        $data = $req->all();
+        $causa = Cause::where('id',$data['id'])->get();
         $cli = Client::where('rut',$causa[0]->client_rut)->get();
         return view('editcause3',compact('causa','cli'));
     }
