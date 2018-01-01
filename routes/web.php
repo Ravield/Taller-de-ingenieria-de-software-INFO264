@@ -98,3 +98,15 @@ Route::post('crearcausas', 'CausesController@store')->name('createcause');
 Route::get('docs','DocumentsController@index')->name('uploadoc');
 Route::post('store','DocumentsController@store')->name('uploadoc');
 Route::get('uploadedDoc/{docname}','DocumentsController@getDoc')->name('getdoc');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
