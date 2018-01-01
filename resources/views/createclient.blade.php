@@ -6,7 +6,7 @@
 <div class="content-wrapper">
   <section class="content-header">
     <h1>Clientes
-      <small>Gestion de los clientes</small>
+      <small>Gestión de los clientes</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
@@ -43,7 +43,7 @@
     {!! Form::text('apellido', null, ['class' => 'form-control']) !!} <!-- input -->
     </div>
     <div class="form-group">
-    {!! Form::label('rut', 'Rut (Sin puntos ni guion)', ['class' => 'control-label']) !!}
+    {!! Form::label('rut', 'Rut (Sin puntos ni guión)', ['class' => 'control-label']) !!}
     {!! Form::text('rut', null, ['class' => 'form-control']) !!} <!-- input -->
     </div>
     <div class="form-group">
@@ -51,7 +51,7 @@
     {!! Form::text('direccion', null, ['class' => 'form-control']) !!} <!-- input -->
     </div>
     <div class="form-group">
-    {!! Form::label('telefono', 'Telefono', ['class' => 'control-label']) !!}
+    {!! Form::label('telefono', 'Teléfono', ['class' => 'control-label']) !!}
     {!! Form::text('telefono', null, ['class' => 'form-control']) !!} <!-- input -->
     </div>
     <div class="form-group">

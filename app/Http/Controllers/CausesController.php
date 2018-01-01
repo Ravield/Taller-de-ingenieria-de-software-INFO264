@@ -7,6 +7,7 @@ use App\Cause;
 use App\Client;
 use App\User;
 use DB;
+use Session;
 class CausesController extends Controller
 {
     /**
@@ -16,8 +17,11 @@ class CausesController extends Controller
      */
     public function index()
     {
-      $causas = Cause::orderBy('nombre')->get();
-      return view('cause',compact('causas'));
+      $abogados = User::orderBy('name')->get(); //accedemos al primer nombre de los abogados
+      $causas = Cause::where('abogado',$abogados[0]->name) //cargamos las causas de este abogado
+                ->orderBy('created_at', 'DESC')->get();
+      $abogados = User::orderBy('name')->pluck('name','name'); //cargamos los nombres de los abogados para el select
+      return view('cause',compact('causas','abogados'));
     }
 
     /**
@@ -63,12 +67,15 @@ class CausesController extends Controller
        return Response::json($causa);
     }
 
-    /*
-    public function show($id)
+
+    public function show(Request $req)
     {
-        //
+        $data = $req->all();
+        $causas = Cause::where('abogado',$data['abogado'])->orderBy('created_at','DESC')->get();
+        $abogados = User::orderBy('name')->pluck('name','name');
+        return view('cause',compact('causas','abogados'));
     }
-    */
+
 
     /**
      * Show the form for editing the specified resource.
@@ -76,11 +83,17 @@ class CausesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $req)
     {
-        $causa = Cause::where('id',$id)->get();
+        $data = $req->all();
+        $causa = Cause::where('id',$data['id'])->get();
         $cli = Client::where('rut',$causa[0]->client_rut)->get();
-        return view('editcause3',compact('causa','cli'));
+        $clientes = Client::select(
+            DB::raw("CONCAT(nombre,' ',apellido) AS name"),'rut')
+            ->orderBy('created_at','DESC')
+            ->pluck('name', 'rut');
+        $abogados = User::orderBy('name')->pluck('name','name');
+        return view('editcause3',compact('causa','cli','clientes','abogados'));
     }
 
     /**
@@ -90,9 +103,24 @@ class CausesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,$id)
     {
-        //
+        $data = $request->all();
+        $causa = Cause::find($id);
+        $this->validate($request, [
+            'nombre' => 'required',
+            'client_rut' => 'required',
+            'abogado' => 'required',
+            'tipo' => 'required'
+        ]);
+        $causa->nombre = $data['nombre'];
+        $causa->tipo = $data['tipo'];
+        $causa->resumen = $data['resumen'];
+        $causa->client_rut = $data['client_rut'];
+        $causa->abogado = $data['abogado'];
+        $causa->save();
+        Session::flash('flash_message', 'Se ha editado exitosamente una causa');
+        return redirect()->back();
     }
 
     /**

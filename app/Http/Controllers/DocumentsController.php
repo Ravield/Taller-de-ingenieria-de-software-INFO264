@@ -5,7 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Document;
-
+use App\Client;
+use App\Cause;
+use DB;
+use Session;
 class DocumentsController extends Controller
 {
     /**
@@ -13,11 +16,27 @@ class DocumentsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $r)
     {
-      return view('uploadoc');
+      $data = $r->all();
+      $cli =$data['rutcliente'];
+      $cliente = Client::where('rut',$cli)->get();
+      $causa = Cause::where('id',$data['idcausa'])->get();
+      $documentos = Document::where('idcausa',$causa[0]->id)->pluck('nombre','nombre');
+      return view('uploadoc', compact('cliente','causa','documentos'));
     }
 
+    public function documentClient(Request $req){
+      $data = $req->all();
+      $cli = $data['rutcliente'];
+      $causas = Cause::where('client_rut',$cli)->pluck('nombre','id');
+      $clientes = Client::select(
+          DB::raw("CONCAT(nombre,' ',apellido) AS name"),'rut')
+          ->orderBy('name')
+          ->pluck('name', 'rut');
+      $documentos = Document::where('idcausa',$causa->id);
+      return view('uploadoc', compact('clientes','causas','documentos'));
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -36,6 +55,7 @@ class DocumentsController extends Controller
      */
     public function store(Request $request)
     {
+      $data = $request->all();
       if ($request->hasFile('doc')){
         foreach($request->doc as $doc){
           $docname = $doc->getClientOriginalName();
@@ -45,7 +65,9 @@ class DocumentsController extends Controller
           $docModel = new Document;
           $docModel->nombre = $docname;
           $docModel->tamaño = $docsize;
+          $docModel->idcausa = $data['idcausa'];
           $docModel->save();
+          Session::flash('flash_message', 'Se han agregado los archivos');
         }
         return redirect()->back();
       }
@@ -71,11 +93,20 @@ class DocumentsController extends Controller
         }
     }
 
-    public function getDoc($docname)
+    public function getDoc(Request $req)
     {
       //try
       //{
-        return response()->download(Storage_path('app/public/'.$docname,null,[],null));
+        $data = $req->all();
+        $archivo = "";
+        try
+        {
+          $archivo = $data['archivo'];
+        }catch(\Exception $e)
+        {
+            return redirect()->back();
+        }
+        return response()->download(Storage_path('app/public/'.$data['archivo'],null,[],null));
 
       //}
       //catch (\Exception $e)

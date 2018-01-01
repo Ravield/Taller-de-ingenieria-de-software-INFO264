@@ -8,7 +8,7 @@
     <section class="content-header">
       <h1>
         Clientes
-        <small>Gestion de los clientes y sus causas</small>
+        <small>Vista de los clientes y sus causas</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
@@ -37,7 +37,7 @@
 
 
         <div class="row">
-        <div class="col col-md-6">
+        <div class="col col-md-12">
           <div class="panel panel-info">
             <div class="panel-heading">Datos de Causa</div>
             <div class="panel-body">
@@ -52,38 +52,6 @@
             </div>
           </div>
         </div><!-- End col 6 I -->
-
-        <div class="col col-md-6">
-          <div class="panel panel-info">
-            <div class="panel-heading">Archivos</div>
-            <div class="panel-body">
-              <table class="table table-hover">
-                <thead>
-                  <th>Documento de Causa</th>
-                  <th>Acción</th>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Archivo Tribunal 1</td>
-                    <td>
-                      <button class="btn btn-success">Abrir</button>
-                      <button class="btn btn-danger">Eliminar</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Antecedentes de Familia</td>
-                    <td>
-                      <button class="btn btn-success">Abrir</button>
-                      <button class="btn btn-danger">Eliminar</button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <button class="btn btn-primary">Subir Archivo</button>
-            </div>
-          </div>
-        </div><!-- End col 6 II-->
       </div><!-- End row -->
 
     </section>

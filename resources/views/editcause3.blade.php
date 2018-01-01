@@ -2,7 +2,7 @@
 
 @section('content')
 
-{!! Form::open(['url' => 'updatecause', 'method' => 'GET']) !!}
+
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
   <section class="content-header">
@@ -12,7 +12,8 @@
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
-      <li class="active">Causas</li>
+      <li><i class="fa fa-book"></i>Causas</li>
+      <li class="active">Editar Causa</li>
     </ol>
   </section>
 
@@ -31,7 +32,7 @@
     </div> -->
     <div class="box box-primary">
           <div class="box-header with-border">
-            <h3 class="box-title">Crear Causas</h3>
+            <h3 class="box-title">Editar Causa</h3>
           </div>
       <div class="box-body">
         @if(Session::has('flash_message'))
@@ -50,9 +51,9 @@
             'method' => 'PUT',
             'route' => ['updatecause', $causa[0]->id]
         ]) !!} -->
-
+        {!! Form::open(['route' => ['updatecause', $causa[0]->id], 'method' => 'PUT']) !!}
         <div class="form-group">
-        {!! Form::hidden('id',$causa[0]->id, ['class' => 'form-control'])!!}
+        <!--{!! Form::hidden('id',$causa[0]->id, ['class' => 'form-control'])!!}-->
         {!! Form::label('nombre', 'Nombre de Causa', ['class' => 'control-label']) !!}
         {!! Form::text('nombre', null, ['class' => 'form-control']) !!} <!-- input -->
         </div>
@@ -65,12 +66,12 @@
         {!! Form::text('resumen', null, ['class' => 'form-control']) !!} <!-- input -->
         </div>
         <div class="form-group">
-        {!! Form::label('cliente', 'Rut Cliente ', ['class' => 'control-label']) !!}
-        {!! Form::label('client_rut', $cli[0]->rut , ['class' => 'form-control']) !!}
+        {!! Form::label('cliente', 'Cliente ', ['class' => 'control-label']) !!}
+        {!! Form::select('client_rut', $clientes, $cli[0]->rut, ['class' => 'form-control'] ) !!}
         </div>
         <div class="form-group">
         {!! Form::label('abogado', 'Abogado a Cargo: ', ['class' => 'control-label']) !!}
-        {!! Form::label('abogado', $causa[0]->abogado, ['class' => 'form-control'] ) !!}
+        {!! Form::select('abogado', $abogados, $causa[0]->abogado, ['class' => 'form-control'] ) !!}
         </div>
         {!! Form::submit('Editar Causa', ['class' => 'btn btn-primary']) !!}
         {!! Form::close() !!}
