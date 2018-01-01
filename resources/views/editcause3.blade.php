@@ -66,7 +66,7 @@
         {!! Form::text('resumen', null, ['class' => 'form-control']) !!} <!-- input -->
         </div>
         <div class="form-group">
-        {!! Form::label('cliente', 'Rut Cliente ', ['class' => 'control-label']) !!}
+        {!! Form::label('cliente', 'Cliente ', ['class' => 'control-label']) !!}
         {!! Form::select('client_rut', $clientes, $cli[0]->rut, ['class' => 'form-control'] ) !!}
         </div>
         <div class="form-group">

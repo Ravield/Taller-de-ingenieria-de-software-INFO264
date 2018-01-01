@@ -96,6 +96,8 @@ Route::put('updatecause/{id}','CausesController@update')->name('updatecause');
 Route::post('crearcausas', 'CausesController@store')->name('createcause');
 
 //docs
-Route::get('docs','DocumentsController@index')->name('uploadoc');
+Route::get('docs','DocumentsController@index')->name('getuploadoc');
 Route::post('store','DocumentsController@store')->name('uploadoc');
-Route::get('uploadedDoc/{docname}','DocumentsController@getDoc')->name('getdoc');
+Route::get('docclient','DocumentsController@documentClient')->name('docclient');
+//Route::get('uploadedDoc/{docname}','DocumentsController@getDoc')->name('getdoc');
+Route::get('uploadedDoc','DocumentsController@getDoc')->name('getdoc');

@@ -17,6 +17,8 @@ class CreateDocumentsTable extends Migration
             $table->increments('id');
             $table->string('nombre');
             $table->string('tamaño');
+            $table->integer('idcausa')->unsigned();
+            $table->foreign('idcausa')->references('id')->on('causes');
             $table->timestamps();
         });
     }

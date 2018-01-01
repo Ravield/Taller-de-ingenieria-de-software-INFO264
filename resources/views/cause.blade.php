@@ -8,7 +8,7 @@
     <section class="content-header">
       <h1>
         Causas
-        <small>Gestion de Causas</small>
+        <small>Gestión de Causas y Documentos</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
@@ -21,7 +21,7 @@
     <section class="content">
       <div class="box box-primary">
           <div class="box-header with-border">
-              <h3 class="box-title">Causas de</h3>
+              <h3 class="box-title">Causas de </h3>
               {!! Form::select('abogado', $abogados, ['class' => 'form-control'] ) !!}
               {!! Form::submit('Ver Causas', ['class' => 'btn btn-primary']) !!}
               {!! Form::close() !!}
@@ -44,12 +44,17 @@
                   <td width="15%">{{$causa->tipo}}</td>
                   <td width="35%">{{$causa->resumen}}</td>
                   <td width="10%">{{$causa->client_rut}}</td>
-                  <td width="15%">{{$causa->abogado}}</td>
+                  <td width="10%">{{$causa->abogado}}</td>
                   <!--<td><a href="{{route('editcause3',$causa->id)}}" class="btn btn-info">Editar</a></td> -->
-                  <td width="5%">
+                  <td width="10%">
                     <form id="{{$causa->id}}" action="{{route('editcause3')}}" method="GET">
                       <input type="hidden" name="id" value={{$causa->id}} /></form>
                     <input form="{{$causa->id}}" type="submit" class="btn btn-primary" value="Editar" />
+                    <form id="doc{{$causa->id}}" method="GET" action="{{route('getuploadoc')}}" >
+                      <input type="hidden" name="idcausa" value={{$causa->id}} />
+                      <input type="hidden" name="rutcliente" value={{$causa->client_rut}} />
+                    </form>
+                    <input form="doc{{$causa->id}}" type="submit" class="btn btn-info" value="Ver Docs" />
                   </td>
                   {!! Form::close() !!}
                 </tr>
