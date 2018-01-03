@@ -6,7 +6,7 @@
 <div class="content-wrapper">
   <section class="content-header">
     <h1>Clientes
-      <small>Gestión de los clientes</small>
+      <small>Gestión de los Clientes</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
@@ -43,7 +43,7 @@
     {!! Form::text('apellido', null, ['class' => 'form-control']) !!} <!-- input -->
     </div>
     <div class="form-group">
-    {!! Form::label('rut', 'Rut (Reemplace k con 0) (*)', ['class' => 'control-label']) !!}
+    {!! Form::label('rut', 'Rut (*) (Reemplace k con 0)', ['class' => 'control-label']) !!}
     {!! Form::text('rut', 188878474, ['class' => 'form-control']) !!} <!-- input -->
     </div>
     <div class="form-group">

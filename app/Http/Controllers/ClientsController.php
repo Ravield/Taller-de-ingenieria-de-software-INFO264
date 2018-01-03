@@ -88,11 +88,11 @@ class ClientsController extends Controller
       $this->validate($request, [  //aqui tengo la validacion que soy gilo
         'nombre' => 'required',
         'apellido' => 'required',
-        'rut' => 'required|unique:clients',
+        'rut' => 'required|unique:clients|integer',
         'correo' => 'email',
       ]);
       Client::create($request->all());
-      Session::flash('flash_message', 'Se ha creado exitosamente un cliente');
+      Session::flash('flash_message', 'Se ha creado exitosamente un cliente.');
       return redirect()->back();
     }
 

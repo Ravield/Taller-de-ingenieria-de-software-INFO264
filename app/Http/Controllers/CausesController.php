@@ -111,6 +111,7 @@ class CausesController extends Controller
         $this->validate($request, [
             'nombre' => 'required',
             'client_rut' => 'required',
+            'resumen' => 'required',
             'abogado' => 'required',
             'tipo' => 'required'
         ]);
@@ -120,7 +121,7 @@ class CausesController extends Controller
         $causa->client_rut = $data['client_rut'];
         $causa->abogado = $data['abogado'];
         $causa->save();
-        Session::flash('flash_message', 'Se ha editado exitosamente una causa');
+        Session::flash('flash_message', 'Se ha editado exitosamente una causa.');
         return redirect()->back();
     }
 

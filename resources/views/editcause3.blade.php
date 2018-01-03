@@ -7,7 +7,7 @@
 <div class="content-wrapper">
   <section class="content-header">
     <h1>
-      Sección de Causas
+      Causas
       <small>Gestión de Causas</small>
     </h1>
     <ol class="breadcrumb">
@@ -72,7 +72,7 @@
         {!! Form::select('client_rut', $clientes, $cli[0]->rut, ['class' => 'form-control'] ) !!}
         </div>
         <div class="form-group">
-        {!! Form::label('abogado', 'Abogado a Cargo: ', ['class' => 'control-label']) !!}
+        {!! Form::label('abogado', 'Abogado a Cargo ', ['class' => 'control-label']) !!}
         {!! Form::select('abogado', $abogados, $causa[0]->abogado, ['class' => 'form-control'] ) !!}
         </div>
         {!! Form::submit('Editar Causa', ['class' => 'btn btn-primary']) !!}
