@@ -41,20 +41,26 @@
                 @foreach($causas as $causa)
                 <tr>
                   <td width="20%">{{$causa->nombre}}</td>
-                  <td width="15%">{{$causa->tipo}}</td>
-                  <td width="35%">{{$causa->resumen}}</td>
+                  <td width="10%">{{$causa->tipo}}</td>
+                  <td width="30%">{{$causa->resumen}}</td>
                   <td width="10%">{{$causa->client_rut}}</td>
-                  <td width="10%">{{$causa->abogado}}</td>
+                  <td width="15%">{{$causa->abogado}}</td>
                   <!--<td><a href="{{route('editcause3',$causa->id)}}" class="btn btn-info">Editar</a></td> -->
-                  <td width="10%">
+                  <td width="20%">
                     <form id="{{$causa->id}}" action="{{route('editcause3')}}" method="GET">
                       <input type="hidden" name="id" value={{$causa->id}} /></form>
-                    <input form="{{$causa->id}}" type="submit" class="btn btn-primary" value="Editar" />
+
+                    <form id="del{{$causa->id}}" action="{{route('deletecause')}}" method="GET">
+                      <input type="hidden" name="id" value={{$causa->id}} /></form>
+
                     <form id="doc{{$causa->id}}" method="GET" action="{{route('getuploadoc')}}" >
                       <input type="hidden" name="idcausa" value={{$causa->id}} />
                       <input type="hidden" name="rutcliente" value={{$causa->client_rut}} />
                     </form>
-                    <input form="doc{{$causa->id}}" type="submit" class="btn btn-info" value="Ver Docs" />
+
+                    <input form="{{$causa->id}}" type="submit" class="btn btn-primary" value="Editar" />
+                    <input form="del{{$causa->id}}" type="submit" class="btn btn-danger" value="Borrar" />
+                    <input form="doc{{$causa->id}}" type="submit" class="btn btn-info" value="Ver Documentos" />
                   </td>
                   {!! Form::close() !!}
                 </tr>

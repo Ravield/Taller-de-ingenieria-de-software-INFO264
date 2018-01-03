@@ -14,6 +14,10 @@ class Client extends Model
       si no deberia escribir algo asi
       return $this->hasOne('App\Phone', 'foreign_key');
   }*/
+  public function causes()
+    {
+      return $this->hasOne('App\Cause');
+    }
 
 
 //Obtener datos bd

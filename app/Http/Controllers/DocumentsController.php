@@ -106,7 +106,7 @@ class DocumentsController extends Controller
         {
             return redirect()->back();
         }
-        return response()->download(Storage_path('app/public/'.$data['archivo'],null,[],null));
+        return response()->download(Storage_path('app/public/'.$archivo,null,[],null));
 
       //}
       //catch (\Exception $e)

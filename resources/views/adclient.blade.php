@@ -25,6 +25,19 @@
           {!! Form::close() !!}
         </div>
         <div class="panel panel-success">
+          @if(Session::has('flash_message'))
+
+            <div class="alert alert-success">
+            {{ Session::get('flash_message') }}
+            </div>
+          @endif
+          @if($errors->any())
+                <div class="alert alert-danger">
+                    @foreach($errors->all() as $error)
+                        <p>{{ $error }}</p>
+                    @endforeach
+                </div>
+          @endif
           <div class="panel-heading">Datos del Cliente</div>
           <div class="panel-body">
             <p id="nombrecliente">Nombre: {{$cli->nombre}} {{$cli->apellido}}</p>
@@ -32,6 +45,28 @@
             <p id="direccioncliente">Dirección: {{$cli->direccion}}</p>
             <p id="telefonocliente">Teléfono: {{$cli->telefono}}</p>
             <p id="correocliente">Correo: {{$cli->correo}}</p>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-footer">
+              <form id="edit{{$cli->id}}" action="{{route('editclient')}}" method="GET">
+                <input type="hidden" name="id" value={{$cli->id}} /></form>
+              <form id="del{{$cli->id}}" method="GET" action="{{route('deleteclient')}}" >
+                <input type="hidden" name="id" value={{$cli->id}} /></form>
+
+              <input form="edit{{$cli->id}}" type="submit" class="btn btn-primary" value="Editar" />
+              <input form="del{{$cli->id}}" type="submit" class="btn btn-danger" value="Borrar" />
+
+
+              <!--{!! Form::open(['url' => 'verinfoclientes']) !!}
+              {!! Form::hidden('client_id', $cli->id ,['class' => 'form-control'])!!}
+              {!! Form::submit('Editar Cliente', ['class' => 'btn btn-info']) !!}
+              {!! Form::close() !!}
+
+              {!! Form::open(['url' => 'verinfoclientes']) !!}
+              {!! Form::hidden('client_id', $cli->id ,['class' => 'form-control'])!!}
+              {!! Form::submit('Eliminar Cliente', ['class' => 'btn btn-danger']) !!}
+              {!! Form::close() !!} -->
+            </div>
           </div>
         </div>
 

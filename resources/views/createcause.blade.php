@@ -21,6 +21,11 @@
           <h3 class="box-title">Crear Causas</h3>
         </div>
         <div class="box-body">
+    @if(Session::has('flash_message'))
+        <div class="alert alert-success">
+            {{ Session::get('flash_message') }}
+        </div>
+    @endif
     @if($errors->any())
           <div class="alert alert-danger">
               @foreach($errors->all() as $error)

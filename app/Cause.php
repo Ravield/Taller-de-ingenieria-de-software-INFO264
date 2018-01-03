@@ -10,10 +10,10 @@ class Cause extends Model
   protected $primaryKey = 'id';//indicar id
   protected $fillable = ['nombre','tipo','resumen', 'client_rut','abogado'];
 
-  public function client()
+  /*public function client()
     {
       return $this->hasOne('App\Client');
-    }
+    }*/
 
   /*$causes = App\Cause::all();
 

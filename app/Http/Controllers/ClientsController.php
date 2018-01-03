@@ -4,6 +4,7 @@ namespace App\Http\Controllers; //+ccontroller
 
 use App\Client;
 use App\Cause;
+use App\Document;
 use Illuminate\Http\Request;
 use Session;
 use DB;
@@ -113,9 +114,11 @@ class ClientsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $req)
     {
-        //
+        $id = $req->all()['id'];
+        $cli = Client::find($id);
+        return view('editclient',compact('cli'));
     }
 
     /**
@@ -127,7 +130,21 @@ class ClientsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+      $task = Client::findOrFail($id);
+
+      $this->validate($request, [
+          'nombre' => 'required',
+          'apellido' => 'required',
+          'rut' => 'required'
+      ]);
+
+      $input = $request->all();
+
+      $task->fill($input)->save();
+
+      Session::flash('flash_message', 'Task successfully added!');
+
+      return redirect()->back();
     }
 
     /**
@@ -136,8 +153,21 @@ class ClientsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $req)
     {
-        //
+        $id = $req->all()['id'];
+        $cli = Client::find($id);
+        $causas = Cause::where('client_rut',$cli->rut)->get();
+        foreach ($causas as $causa) {
+          $docs = Document::where('idcausa',$causa->id)->get();
+          foreach ($docs as $doc) {
+            $doc->delete();
+            //falta eliminar del storage!!
+          }
+          $causa->delete();
+        }
+        $cli->delete();
+        Session::flash('flash_message', 'Se ha borrado exitosamente un cliente, sus causas y documentos asociados');
+        return redirect()->back();
     }
 }

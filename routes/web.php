@@ -85,12 +85,16 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('verclientes','ClientsController@index')->name('adclient');
 Route::get('crearclientes','ClientsController@create')->name('createclient');
 Route::post('verinfoclientes','ClientsController@infoclients');
+Route::get('eliminarcliente','ClientsController@destroy')->name('deleteclient');
+Route::get('editarcliente','ClientsController@edit')->name('editclient');
+Route::put('actualizarcliente/{id}','ClientsController@update')->name('updateclient');
 Route::post('crearclientes', 'ClientsController@store')->name('createclient');
 
 //Rutas causas
 Route::get('causa','CausesController@index')->name('cause');
 Route::get('crearcausas','CausesController@create')->name('createcause');
 Route::get('editarcausa','CausesController@edit')->name('editcause3');
+Route::get('borrarcausa','CausesController@destroy')->name('deletecause');
 Route::get('vercausaabogado','CausesController@show')->name('vercausaabogado');
 Route::put('updatecause/{id}','CausesController@update')->name('updatecause');
 Route::post('crearcausas', 'CausesController@store')->name('createcause');

@@ -35,7 +35,7 @@
             @endif
         </div>
     </div>
-     
+
 
      <div class="row">
         <div class="col-xs-8">
@@ -53,7 +53,7 @@
     </div>
     </form>
 
-    <a href="{{ route('password.request') }}">¿Olvido su clave?</a><br>
+    <a href="{{ route('password.request') }}">¿Olvidó su clave?</a><br>
     <a href="register.html" class="text-center">Registrar</a>
 
   </div>

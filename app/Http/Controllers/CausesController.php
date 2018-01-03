@@ -48,12 +48,13 @@ class CausesController extends Controller
     public function store(Request $request)
     {
       $this->validate($request, [
+        'nombre' => 'required',
         'tipo' => 'required',
         'resumen' => 'required',
       ]);
 
       Cause::create($request->all());
-
+      Session::flash('flash_message', 'Se ha creado exitosamente una causa');
       return redirect()->back();
     }
 
@@ -129,8 +130,12 @@ class CausesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $req)
     {
-        //
+      $id = $req->all()['id'];
+      $causa = Cause::find($id);
+      $causa->delete();
+      Session::flash('flash_message', 'Se ha borrado exitosamente una causa');
+      return redirect()->back();
     }
 }
