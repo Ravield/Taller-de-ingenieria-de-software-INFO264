@@ -22,7 +22,7 @@ class ClientsController extends Controller
           DB::raw("CONCAT(nombre,' ',apellido) AS name"),'rut','created_at')
           ->orderBy('created_at','DESC')
           ->pluck('name', 'rut');
-      $cli =$clientes;
+      $cli = $clientes;
       //obtenemos el primer cliente y mostramos su info
       $cli = Client::orderBy('created_at','DESC')->first();
       $causa = Cause::where('client_rut',$cli->rut)->first();
@@ -89,7 +89,7 @@ class ClientsController extends Controller
         'nombre' => 'required',
         'apellido' => 'required',
         'rut' => 'required|unique:clients',
-        'correo' => 'required|email',
+        'correo' => 'email',
       ]);
       Client::create($request->all());
       Session::flash('flash_message', 'Se ha creado exitosamente un cliente');

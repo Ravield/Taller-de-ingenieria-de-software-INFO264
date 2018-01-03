@@ -13,18 +13,18 @@ class CausesTableSeeder extends Seeder
     public function run()
     {
       Cause::create([
-        'nombre' => 'Araya vs Lazo',
+        'nombre' => 'Araya con Lazo',
         'tipo' => 'Penal',
         'resumen' => 'Sin descripcion',
-        'client_rut' => 187845444,
+        'client_rut' => 188878474,
         'abogado' => 'Elliot Ide',
       ]);
 
       Cause::create([
-        'nombre' => 'Gonzalez vs Hidalgo',
+        'nombre' => 'Gonzalez con Hidalgo',
         'tipo' => 'Familia',
         'resumen' => 'Discusion por viaje',
-        'client_rut' => 188878474,
+        'client_rut' => 187845444,
         'abogado' => 'Elliot Ide',
       ]);
     }

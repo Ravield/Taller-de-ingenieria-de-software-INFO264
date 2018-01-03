@@ -5,7 +5,7 @@
 
 <div class="content-wrapper">
   <section class="content-header">
-    <h1>Clientes
+    <h1>Causas
       <small>Gestión de Causas</small>
     </h1>
     <ol class="breadcrumb">
@@ -38,17 +38,16 @@
     {!! Form::select('client_rut', $clientes, null, ['class' => 'form-control'] ) !!}
     </div>
     <div class="form-group">
-    {!! Form::label('nombre', 'Nombre de Causa', ['class' => 'control-label']) !!}
-    {!! Form::text('nombre', null, ['class' => 'form-control']) !!} <!-- input -->
+    {!! Form::label('nombre', 'Nombre de Causa (*)', ['class' => 'control-label']) !!}
+    {!! Form::text('nombre', 'Ej: Henriquez con Vega', ['class' => 'form-control']) !!} <!-- input -->
     </div>
     <div class="form-group">
-    {!! Form::label('tipo', 'Tipo', ['class' => 'control-label']) !!}
-    {!! Form::select('tipo', ['Civil'=>'Civil', 'Familia'=>'Familia','Penal'=>'Penal',
-          'Laboral'=>'Laboral','Corte de Apelaciones'=>'Corte de Apelaciones', 'Comercial'=>'Comercial',
-          'Otro'=>'Otro'], null, ['class' => 'form-control'] ) !!}
+    {!! Form::label('tipo', 'Tipo (*)', ['class' => 'control-label']) !!}
+    {!! Form::select('tipo', ['Otro'=>'Otro','Civil'=>'Civil', 'Familia'=>'Familia','Penal'=>'Penal',
+          'Laboral'=>'Laboral','Corte de Apelaciones'=>'Corte de Apelaciones', 'Comercial'=>'Comercial'], null, ['class' => 'form-control'] ) !!}
     </div>
     <div class="form-group">
-    {!! Form::label('resumen', 'Resumen', ['class' => 'control-label']) !!}
+    {!! Form::label('resumen', 'Resumen (*)', ['class' => 'control-label']) !!}
     {!! Form::text('resumen', null, ['class' => 'form-control']) !!} <!-- input -->
     </div>
     <div class="form-group">

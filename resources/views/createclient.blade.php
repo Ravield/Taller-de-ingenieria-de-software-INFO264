@@ -35,16 +35,16 @@
           </div>
     @endif
     <div class="form-group">
-    {!! Form::label('nombre', 'Nombre', ['class' => 'control-label']) !!}
+    {!! Form::label('nombre', 'Nombre (*)', ['class' => 'control-label']) !!}
     {!! Form::text('nombre', null, ['class' => 'form-control']) !!} <!-- input -->
     </div>
     <div class="form-group">
-    {!! Form::label('apellido', 'Apellido', ['class' => 'control-label']) !!}
+    {!! Form::label('apellido', 'Apellido (*)', ['class' => 'control-label']) !!}
     {!! Form::text('apellido', null, ['class' => 'form-control']) !!} <!-- input -->
     </div>
     <div class="form-group">
-    {!! Form::label('rut', 'Rut (Sin puntos ni guión)', ['class' => 'control-label']) !!}
-    {!! Form::text('rut', null, ['class' => 'form-control']) !!} <!-- input -->
+    {!! Form::label('rut', 'Rut (Reemplace k con 0) (*)', ['class' => 'control-label']) !!}
+    {!! Form::text('rut', 188878474, ['class' => 'form-control']) !!} <!-- input -->
     </div>
     <div class="form-group">
     {!! Form::label('direccion', 'Dirección', ['class' => 'control-label']) !!}

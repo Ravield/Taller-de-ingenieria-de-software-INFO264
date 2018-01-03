@@ -9,7 +9,7 @@
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Sign in para iniciar sesion</p>
+    <p class="login-box-msg">Log in</p> <!--Sing in para iniciar sesion-->
 
     <form action="{{ route('login') }}" method="POST">
      {{ csrf_field() }}
@@ -38,7 +38,7 @@
 
 
      <div class="row">
-        <div class="col-xs-8">
+        <div class="col-xs-4">
           <div class="checkbox icheck">
             <label>
               <input type="checkbox"> Recordar
@@ -47,14 +47,14 @@
         </div>
         <!-- /.col -->
         <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Log In</button>
+          <button type="submit" class="btn btn-primary btn-block btn-flat">Ingresar</button>
         </div>
         <!-- /.col -->
     </div>
     </form>
 
-    <a href="{{ route('password.request') }}">¿Olvidó su clave?</a><br>
-    <a href="register.html" class="text-center">Registrar</a>
+    <!--<a href="{{ route('password.request') }}">¿Olvidó su clave?</a><br>
+    <a href="register.html" class="text-center">Registrar</a>-->
 
   </div>
   <!-- /.login-box-body -->

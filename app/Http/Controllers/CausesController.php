@@ -54,7 +54,7 @@ class CausesController extends Controller
       ]);
 
       Cause::create($request->all());
-      Session::flash('flash_message', 'Se ha creado exitosamente una causa');
+      Session::flash('flash_message', 'Se ha creado exitosamente una causa.');
       return redirect()->back();
     }
 

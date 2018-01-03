@@ -59,9 +59,9 @@
         </div>
         <div class="form-group">
         {!! Form::label('tipo', 'Tipo', ['class' => 'control-label']) !!}
-        {!! Form::select('tipo', ['Civil'=>'Civil', 'Familia'=>'Familia','Penal'=>'Penal',
+        {!! Form::select('tipo', ['Otro'=>'Otro','Civil'=>'Civil', 'Familia'=>'Familia','Penal'=>'Penal',
               'Laboral'=>'Laboral','Corte de Apelaciones'=>'Corte de Apelaciones', 'Comercial'=>'Comercial',
-              'Otro'=>'Otro'], null, ['class' => 'form-control'] ) !!}
+            ], null, ['class' => 'form-control'] ) !!}
         </div>
         <div class="form-group">
         {!! Form::label('resumen', 'Resumen', ['class' => 'control-label']) !!}
