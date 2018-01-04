@@ -23,9 +23,40 @@ class ClientsController extends Controller
           ->orderBy('created_at','DESC')
           ->pluck('name', 'rut');
       $cli = $clientes;
-      //obtenemos el primer cliente y mostramos su info
-      $cli = Client::orderBy('created_at','DESC')->first();
-      $causa = Cause::where('client_rut',$cli->rut)->first();
+      $causa = null;
+      try{
+        $cli = Client::orderBy('created_at','DESC')->first();
+        $causa = Cause::where('client_rut',$cli->rut)->first();
+      }catch(\Exception $e){
+        $cli = array(
+          'id'=>'',
+          'nombre'=>' ',
+          'apellido' => '',
+          'rut' => '',
+          'direccion' => '',
+          'correo' => '',
+          'telefono' =>''
+        );
+        $cli =(object)$cli;
+        $clientes = $cli;
+      }
+      /*if(!is_null($cli)){
+        //obtenemos el primer cliente y mostramos su info
+        $cli = Client::orderBy('created_at','DESC')->first();
+        $causa = Cause::where('client_rut',$cli->rut)->first();
+      }else{
+        $cli = array(
+          'id'=>'',
+          'nombre'=>' ',
+          'apellido' => '',
+          'rut' => '',
+          'direccion' => '',
+          'correo' => '',
+          'telefono' =>''
+        );
+        $cli =(object)$cli;
+        $clientes = $cli;
+      }*/
 
       //si el cliente no ha hecho Causas entonces retorna una causa genérica
       if($causa==null){
@@ -118,7 +149,12 @@ class ClientsController extends Controller
     {
         $id = $req->all()['id'];
         $cli = Client::find($id);
-        return view('editclient',compact('cli'));
+        if($cli!=null)
+        {
+          return view('editclient',compact('cli'));
+        }else {
+          return redirect()->back();
+        }
     }
 
     /**
@@ -142,7 +178,7 @@ class ClientsController extends Controller
 
       $task->fill($input)->save();
 
-      Session::flash('flash_message', 'Task successfully added!');
+      Session::flash('flash_message', 'Cliente editado exitosamente.');
 
       return redirect()->back();
     }
@@ -157,17 +193,20 @@ class ClientsController extends Controller
     {
         $id = $req->all()['id'];
         $cli = Client::find($id);
-        $causas = Cause::where('client_rut',$cli->rut)->get();
-        foreach ($causas as $causa) {
-          $docs = Document::where('idcausa',$causa->id)->get();
-          foreach ($docs as $doc) {
-            $doc->delete();
-            //falta eliminar del storage!!
+        if($cli!=null){
+          $causas = Cause::where('client_rut',$cli->rut)->get();
+          foreach ($causas as $causa) {
+            $docs = Document::where('idcausa',$causa->id)->get();
+            foreach ($docs as $doc) {
+              $doc->delete();
+              //falta eliminar del storage!!
+            }
+            $causa->delete();
           }
-          $causa->delete();
+          $cli->delete();
+          Session::flash('flash_message', 'Se ha borrado exitosamente un cliente, sus causas y documentos asociados.');
         }
-        $cli->delete();
-        Session::flash('flash_message', 'Se ha borrado exitosamente un cliente, sus causas y documentos asociados');
+        
         return redirect()->back();
     }
 }
