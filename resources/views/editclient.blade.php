@@ -18,7 +18,7 @@
 <section class="content">
   <div class="box box-primary">
         <div class="box-header with-border">
-          <h3 class="box-title">Crear Cliente</h3>
+          <h3 class="box-title">Editar Cliente</h3>
         </div>
         <div class="box-body">
     @if(Session::has('flash_message'))
