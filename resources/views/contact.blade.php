@@ -1,7 +1,7 @@
 @extends('layouts/timerLayout')
 
 @section('contenido') <!-- sirve para referenciar al yield-->
-<!--
+{!! Form::open(['url' => 'contacto']) !!}<!--
         ==================================================
             Global Page Section Start
         ================================================== -->
@@ -34,12 +34,19 @@
         <section id="contact-section">
             <div class="container">
                 <div class="row">
-                    @if(session()->has('flash'))
+                    @if(Session()->has('flash_message'))
                     <div class="alert alert-success alert-dismissible" role="alert">
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        {{session()->get('flash')}}
+                        {{session()->get('flash_message')}}
                     </div>
                     @endif
+                    <!--@if($errors->any())
+                          <div class="alert alert-danger">
+                              @foreach($errors->all() as $error)
+                                  <p>{{ $error }}</p>
+                              @endforeach
+                          </div>
+                    @endif-->
                     <div class="col-md-6">
                         <div class="block">
                             <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Contactenos</h2>
@@ -50,19 +57,19 @@
                                 <form id="contact-form" method="post" action="{{route ('messages')}}" role="form">
                                 {{ csrf_field() }}
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
-                                        <input type="text" placeholder="Nombre" class="form-control" name="name" id="name" required>
+                                        <input type="text" placeholder="Nombre" class="form-control" name="nombre" id="name" required>
                                     </div>
 
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
-                                        <input type="email" placeholder="Email" class="form-control" name="email" id="email" required>
+                                        <input type="email" placeholder="Email" class="form-control" name="correo" id="email" required>
                                     </div>
 
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
-                                        <input type="text" placeholder="Asunto" class="form-control" name="subject" id="subject" required>
+                                        <input type="text" placeholder="Asunto" class="form-control" name="asunto" id="subject" required>
                                     </div>
 
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
-                                        <textarea rows="6" placeholder="Cuentenos su caso" class="form-control" name="body" id="body" required></textarea>
+                                        <textarea rows="6" placeholder="Cuentenos su caso" class="form-control" name="consulta" id="body" required></textarea>
                                     </div>
 
 
@@ -101,6 +108,7 @@
                             <p>+56950525853 </p>
                         </div>
                     </div>
+                    {!! Form::close() !!}
                 </div>
             </div>
         </section>
