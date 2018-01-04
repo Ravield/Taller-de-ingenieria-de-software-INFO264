@@ -67,7 +67,7 @@ class DocumentsController extends Controller
           $docModel->tamaño = $docsize;
           $docModel->idcausa = $data['idcausa'];
           $docModel->save();
-          Session::flash('flash_message', 'Se han agregado los archivos');
+          Session::flash('flash_message', 'Se han agregado los archivos.');
         }
         return redirect()->back();
       }

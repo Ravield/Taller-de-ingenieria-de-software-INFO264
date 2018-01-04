@@ -18,7 +18,7 @@
 <section class="content">
   <div class="box box-primary">
         <div class="box-header with-border">
-          <h3 class="box-title">Crear Cliente</h3>
+          <h3 class="box-title">Editar Cliente</h3>
         </div>
         <div class="box-body">
     @if(Session::has('flash_message'))
@@ -40,15 +40,15 @@
         'route' => ['updateclient', $cli->id]
     ]) !!}
     <div class="form-group">
-    {!! Form::label('nombre', 'Nombre', ['class' => 'control-label']) !!}
+    {!! Form::label('nombre', 'Nombre (*)', ['class' => 'control-label']) !!}
     {!! Form::text('nombre', null, ['class' => 'form-control']) !!} <!-- input -->
     </div>
     <div class="form-group">
-    {!! Form::label('apellido', 'Apellido', ['class' => 'control-label']) !!}
+    {!! Form::label('apellido', 'Apellido (*)', ['class' => 'control-label']) !!}
     {!! Form::text('apellido', null, ['class' => 'form-control']) !!} <!-- input -->
     </div>
     <div class="form-group">
-    {!! Form::label('rut', 'Rut (Sin puntos ni guión)', ['class' => 'control-label']) !!}
+    {!! Form::label('rut', 'Rut (Reemplace k con 0) (*)', ['class' => 'control-label']) !!}
     {!! Form::text('rut', null, ['class' => 'form-control']) !!} <!-- input -->
     </div>
     <div class="form-group">

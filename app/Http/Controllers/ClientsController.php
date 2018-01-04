@@ -88,7 +88,7 @@ class ClientsController extends Controller
       $this->validate($request, [  //aqui tengo la validacion que soy gilo
         'nombre' => 'required',
         'apellido' => 'required',
-        'rut' => 'required|unique:clients',
+        'rut' => 'required|unique:clients|integer',
         'correo' => 'email',
       ]);
       Client::create($request->all());
@@ -135,7 +135,8 @@ class ClientsController extends Controller
       $this->validate($request, [
           'nombre' => 'required',
           'apellido' => 'required',
-          'rut' => 'required'
+          'rut' => 'required|unique:clients|integer',
+          'correo'=> 'email',
       ]);
 
       $input = $request->all();
