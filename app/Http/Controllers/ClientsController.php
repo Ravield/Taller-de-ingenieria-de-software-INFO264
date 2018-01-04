@@ -84,6 +84,7 @@ class ClientsController extends Controller
           ->pluck('name', 'rut');
 
       $cli = Client::where('rut', $data['rut'])->firstOrFail();
+      if($cli==null) return redirect()->back();
       $causa = Cause::where('client_rut',$cli->rut)->first();
       //si el cliente no registra causa, envia una causa genérica
       if($causa==null){
@@ -176,8 +177,16 @@ class ClientsController extends Controller
       ]);
 
       $input = $request->all();
-
+      $cli = Client::find($id);
+      $causas = Cause::where('client_rut',$cli->rut)->get();
+      
+      DB::statement('SET FOREIGN_KEY_CHECKS=0');
+      foreach ($causas as $causa) {
+        $causa->client_rut = $input['rut'];
+        $causa->save();
+      }
       $task->fill($input)->save();
+      DB::statement('SET FOREIGN_KEY_CHECKS=1');
 
       Session::flash('flash_message', 'Cliente editado exitosamente.');
 
@@ -207,7 +216,7 @@ class ClientsController extends Controller
           $cli->delete();
           Session::flash('flash_message', 'Se ha borrado exitosamente un cliente, sus causas y documentos asociados.');
         }
-        
+
         return redirect()->back();
     }
 }

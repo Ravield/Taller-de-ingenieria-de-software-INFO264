@@ -1,14 +1,14 @@
 @extends('layouts.adminLayout')
 
 @section('content')
-{!! Form::open(['url' => 'verinfoclientes']) !!}
+
 	<!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
         Clientes
-        <small>Vista de los clientes y sus causas</small>
+        <small>Gestión de los clientes y sus causas</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
@@ -19,6 +19,7 @@
 
     <section class="content">
         <div class="form-group">
+          {!! Form::open(['url' => 'verinfoclientes']) !!}
           {!! Form::label('nombre', 'Nombre', ['class' => 'control-label']) !!}
           {!! Form::select('rut', $clientes, ['class' => 'form-control'] ) !!}
           {!! Form::submit('Ver Info', ['class' => 'btn btn-primary']) !!}
