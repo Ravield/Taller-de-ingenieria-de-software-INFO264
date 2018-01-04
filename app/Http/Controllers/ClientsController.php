@@ -22,7 +22,7 @@ class ClientsController extends Controller
       $clientes = Client::select(
           DB::raw("CONCAT(nombre,' ',apellido) AS name"),'rut','created_at')
           ->orderBy('created_at','DESC')
-          ->pluck('name', 'rut');
+          ->pluck('name', 'rut'); //el segundo es el valor que esta asociado a cada opcion
       $cli = $clientes;
       $causa = null;
       try{

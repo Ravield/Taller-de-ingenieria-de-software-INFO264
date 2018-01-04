@@ -61,7 +61,7 @@ Route::post('messages', function(){
 
 
 Route::get('administracion', 'HomeController@adini')->name('adini');
-Route::get('verclientes', 'HomeController@adclient')->name('adclient');
+//Route::get('verclientes', 'HomeController@adclient')->name('adclient');
 //Route::get('crearclientes', 'HomeController@createclient')->name('createclient');
 Route::get('causas', 'HomeController@cause')->name('cause');
 Route::post('verclientes', 'HomeController@adclient')->name('adclient');
@@ -105,6 +105,16 @@ Route::post('store','DocumentsController@store')->name('uploadoc');
 Route::get('docclient','DocumentsController@documentClient')->name('docclient');
 //Route::get('uploadedDoc/{docname}','DocumentsController@getDoc')->name('getdoc');
 Route::get('uploadedDoc','DocumentsController@getDoc')->name('getdoc');
-Route::get('documentos','DocumentsController@destroy')->name('destroy');
 
+Route::get('documentos','DocumentsController@destroy')->name('destroy');
 Route::get('/usuarios', 'UsersController@index')->name('usuarios');
+
+//Rutas consultas
+Route::get('verconsultas','QueriesController@index')->name('adqueries');
+Route::get('contacto','QueriesController@create')->name('contact');
+Route::post('contacto','QueriesController@store')->name('contact');
+Route::post('verinfoconsultas','QueriesController@infoqueries');
+/*Route::get('eliminarcliente','ClientsController@destroy')->name('deleteclient');
+Route::get('editarcliente','ClientsController@edit')->name('editclient');
+Route::put('actualizarcliente/{id}','ClientsController@update')->name('updateclient');
+Route::post('crearclientes', 'ClientsController@store')->name('createclient');*/
