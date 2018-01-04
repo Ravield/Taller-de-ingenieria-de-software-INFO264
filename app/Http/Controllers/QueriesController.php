@@ -119,21 +119,19 @@ class QueriesController extends Controller
         //
     }
 
-    public function sendMail()
+    public function sendMail(Request $req)
     {
-      /*$mail = new Mail;
-      $mail->SMTPOptions = array(
-        'ssl' => array(
-        'verify_peer' => false,
-        'verify_peer_name' => false,
-        'allow_self_signed' => true,
-        )
-      );*/
-
-      $data = array('name'=>"Sam Jose", 'body' => "Test mail");
-      Mail::send('emails.mail', $data, function($message) {
-        $message->to('f.catalan.v@gmail.com', 'Fabian Catalan')
-        ->subject('Testing Enviar Correo');
+      $id = $req->all()['id'];
+      $consulta = Query::find($id);
+      //$req->respuesta
+      //return $data;
+      //return $consulta;
+      $data = array('name'=>$consulta->nombre, 'email' => $consulta->correo,
+      'subject'=>$consulta->asunto, 'body' => $req->respuesta);
+      //return $data['name'];
+      Mail::send('emails.mail', $data, function($message) use($data) {
+        $message->to($data['email'], $data['name'])
+        ->subject($data['subject']);
         $message->from('contactosgaj@gmail.com','Estudio Juridico M&A');
       });
     }

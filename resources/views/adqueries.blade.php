@@ -41,5 +41,23 @@
         </div>
       </div>
     </div>
-  </section>
-@stop
+    <!-- Formulario de Respuesta -->
+    <form id="sendMail{{$cons[0]->id}}" action="{{route('sendanswer')}}" method="GET">
+      <input type="hidden" name="id" value={{$cons[0]->id}}/>
+      <div class="row">
+        <div class="col col-md-8">
+          <div class="panel panel-info">
+            <div class="panel-heading">Responder</div>
+                <div class="panel-body">
+                  <div class="form-group">
+                      {!! Form::label('respuesta', 'Respuesta', ['class' => 'control-label']) !!}
+                      {!! Form::textarea('respuesta', null, ['class' => 'form-control']) !!}
+                    </div>
+                    {!! Form::submit('Enviar', ['class' => 'btn btn-primary']) !!}
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div<>
+          </section>
+          @stop

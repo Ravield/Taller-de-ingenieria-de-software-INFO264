@@ -115,7 +115,7 @@ Route::get('crearcontacto','QueriesController@create')->name('createcontact');
 Route::post('registrarcontacto','QueriesController@store')->name('storecontact');
 Route::post('verinfoconsultas','QueriesController@infoqueries');
 
-Route::get('responderconsulta', 'QueriesController@sendMail');
+Route::get('responderconsulta', 'QueriesController@sendMail')->name('sendanswer');
 /*Route::get('eliminarcliente','ClientsController@destroy')->name('deleteclient');
 Route::get('editarcliente','ClientsController@edit')->name('editclient');
 Route::put('actualizarcliente/{id}','ClientsController@update')->name('updateclient');
