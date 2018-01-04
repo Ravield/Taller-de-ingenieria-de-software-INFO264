@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Query;
 use Session;
 use DB;
+use Mail;
 class QueriesController extends Controller
 {
     /**
@@ -116,5 +117,24 @@ class QueriesController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function sendMail()
+    {
+      /*$mail = new Mail;
+      $mail->SMTPOptions = array(
+        'ssl' => array(
+        'verify_peer' => false,
+        'verify_peer_name' => false,
+        'allow_self_signed' => true,
+        )
+      );*/
+
+      $data = array('name'=>"Sam Jose", 'body' => "Test mail");
+      Mail::send('emails.mail', $data, function($message) {
+        $message->to('f.catalan.v@gmail.com', 'Fabian Catalan')
+        ->subject('Testing Enviar Correo');
+        $message->from('contactosgaj@gmail.com','Estudio Juridico M&A');
+      });
     }
 }

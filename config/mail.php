@@ -56,8 +56,10 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        /*'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
+        'name' => env('MAIL_FROM_NAME', 'Example'),*/
+        'address' => env('MAIL_FROM_ADDRESS', 'contactosgaj@gmail.com'),
+        'name' => env('MAIL_FROM_NAME', 'Estudio Juridico M&A'),
     ],
 
     /*
@@ -71,7 +73,17 @@ return [
     |
     */
 
-    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+    'encryption' => env('MAIL_ENCRYPTION', 'tls'), //'tls'
+
+    'stream' => [
+      'ssl' => [
+        'allow_self_signed' => true,
+        'verify_peer' => false,
+        'verify_peer_name' => false,
+      ],
+    ],
+
+
 
     /*
     |--------------------------------------------------------------------------
