@@ -21,6 +21,18 @@
       <h3 class="box-title">Documentos de Causa</h3>
     </div>
     <div class="box-body">
+      @if(Session::has('flash_message'))
+        <div class="alert alert-success">
+        {{ Session::get('flash_message') }}
+        </div>
+      @endif
+      @if($errors->any())
+            <div class="alert alert-danger">
+                @foreach($errors->all() as $error)
+                    <p>{{ $error }}</p>
+                @endforeach
+            </div>
+      @endif
       <!--Aca va el primer form para descargar archivos. Se Pueden sacar los inputs del nombre cliente y causa-->
       {!! Form::open(array('method' => 'GET', 'action' => 'DocumentsController@getDoc')) !!}
       <div class="form-group">
@@ -49,19 +61,6 @@
     </div>
     <!--Aca va el 2° form para subir archivos. Los hidden contienen los valores para almacenar-->
     <div class="box-body">
-    @if(Session::has('flash_message'))
-
-      <div class="alert alert-success">
-      {{ Session::get('flash_message') }}
-      </div>
-    @endif
-    @if($errors->any())
-          <div class="alert alert-danger">
-              @foreach($errors->all() as $error)
-                  <p>{{ $error }}</p>
-              @endforeach
-          </div>
-    @endif
 
     {!! Form::open(['files' => true, 'action' => 'DocumentsController@store']) !!}
 
@@ -69,13 +68,33 @@
 
       {{csrf_field()}}
       {!! Form::hidden('idcausa', $causa[0]->id, ['class' => 'form-control']) !!}
-      {!! Form::label('nombre', 'Seleccione archivo(s)', ['class' => 'control-label']) !!}
+      {!! Form::label('nombre', 'Seleccione documento(s)', ['class' => 'control-label']) !!}
       <!--{!! Form::file('doc', null, ['class' => 'form-control']) !!}<br>-->
       <input type = "file" class = "form-control" name="doc[]" multiple><br> <!-- arreglin-->
       {!! Form::submit('Subir Documento', ['class' => 'btn btn-primary']) !!}
       {!! Form::close() !!}
     </div>
+  </div>
+</div>
 
+  <!-- Eliminar archivos -->
+  <div class="box box-primary">
+    <div class="box-header with-border">
+      <h3 class="box-title">Eliminar Documentos</h3>
+    </div>
+    <!--Aca va el 2° form para subir archivos. Los hidden contienen los valores para almacenar-->
+    <div class="box-body">
+
+    {!! Form::open(['method' => 'GET', 'action' => 'DocumentsController@destroy']) !!}
+
+    <div class="form-group">
+
+      {{csrf_field()}}
+      {!! Form::label('nombre', 'Seleccione el documento a eliminar', ['class' => 'control-label']) !!}
+      {!! Form::select('archivo', $documentos ,null, ['class' => 'form-control']) !!}
+      {!! Form::submit('Eliminar Documento', ['class' => 'btn btn-danger']) !!}
+      {!! Form::close() !!}
+    </div>
 
 </section>
 </div>

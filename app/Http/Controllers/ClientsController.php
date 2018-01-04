@@ -6,6 +6,7 @@ use App\Client;
 use App\Cause;
 use App\Document;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Session;
 use DB;
 class ClientsController extends Controller
@@ -179,7 +180,7 @@ class ClientsController extends Controller
       $input = $request->all();
       $cli = Client::find($id);
       $causas = Cause::where('client_rut',$cli->rut)->get();
-      
+
       DB::statement('SET FOREIGN_KEY_CHECKS=0');
       foreach ($causas as $causa) {
         $causa->client_rut = $input['rut'];
@@ -208,8 +209,8 @@ class ClientsController extends Controller
           foreach ($causas as $causa) {
             $docs = Document::where('idcausa',$causa->id)->get();
             foreach ($docs as $doc) {
+              Storage::delete('public/'.$doc->nombre);
               $doc->delete();
-              //falta eliminar del storage!!
             }
             $causa->delete();
           }

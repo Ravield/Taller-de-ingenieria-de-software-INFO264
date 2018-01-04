@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use App\Cause;
 use App\Client;
 use App\User;
+use App\Document;
 use DB;
 use Session;
 class CausesController extends Controller
@@ -135,6 +137,11 @@ class CausesController extends Controller
     {
       $id = $req->all()['id'];
       $causa = Cause::find($id);
+      $docs = Document::where('idcausa',$causa->id)->get();
+      foreach ($docs as $doc) {
+        Storage::delete('public/'.$doc->nombre);
+        $doc->delete();
+      }
       $causa->delete();
       Session::flash('flash_message', 'Se ha borrado exitosamente una causa');
       return redirect()->back();

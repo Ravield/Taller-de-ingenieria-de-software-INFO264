@@ -37,15 +37,6 @@ class DocumentsController extends Controller
       $documentos = Document::where('idcausa',$causa->id);
       return view('uploadoc', compact('clientes','causas','documentos'));
     }
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-      //
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -69,8 +60,8 @@ class DocumentsController extends Controller
           $docModel->save();
           Session::flash('flash_message', 'Se han agregado los archivos.');
         }
-        return redirect()->back();
       }
+      return redirect()->back();
     }
 
     /**
@@ -95,48 +86,16 @@ class DocumentsController extends Controller
 
     public function getDoc(Request $req)
     {
-      //try
-      //{
         $data = $req->all();
         $archivo = "";
         try
         {
           $archivo = $data['archivo'];
+          return response()->download(Storage_path('app/public/'.$archivo,null,[],null));
         }catch(\Exception $e)
         {
             return redirect()->back();
         }
-        return response()->download(Storage_path('app/public/'.$archivo,null,[],null));
-
-      //}
-      //catch (\Exception $e)
-      //{
-        //return "File Not Found";
-      //}
-
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
     }
 
     /**
@@ -145,8 +104,18 @@ class DocumentsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $req)
     {
-        //
+      try{
+        $archivo = $req->all()['archivo'];
+        Storage::delete('public/'.$archivo);
+        $doc = Document::where('nombre',$archivo)->get();
+        if($doc[0]!=null){
+          $doc[0]->delete();
+        }
+        Session::flash('flash_message', 'Se ha eliminado el archivo.');
+      }catch(\Exception $e)
+      {}
+      return redirect()->back();
     }
 }

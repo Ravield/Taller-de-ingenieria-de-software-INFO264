@@ -66,10 +66,10 @@ Route::get('verclientes', 'HomeController@adclient')->name('adclient');
 Route::get('causas', 'HomeController@cause')->name('cause');
 Route::post('verclientes', 'HomeController@adclient')->name('adclient');
 
+
 //Aplicar un middleware a un conjunto de rutas
-Route::group(['middleware' => 'admin', 'namespace' => 'Admin'], function(){
-	Route::get('/usuarios', 'TestController@index')->name('adusers');
-});
+//Route::group(['middleware' => 'admin', 'namespace' => 'Admin'], function(){
+//	Route::get('/usuarios', 'TestController@index')->name('adusers'); });
 
 
 /*Route::get('clientes', function () {
@@ -105,3 +105,6 @@ Route::post('store','DocumentsController@store')->name('uploadoc');
 Route::get('docclient','DocumentsController@documentClient')->name('docclient');
 //Route::get('uploadedDoc/{docname}','DocumentsController@getDoc')->name('getdoc');
 Route::get('uploadedDoc','DocumentsController@getDoc')->name('getdoc');
+Route::get('documentos','DocumentsController@destroy')->name('destroy');
+
+Route::get('/usuarios', 'UsersController@index')->name('usuarios');
