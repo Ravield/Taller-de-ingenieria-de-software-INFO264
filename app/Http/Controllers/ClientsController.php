@@ -171,7 +171,8 @@ class ClientsController extends Controller
       $this->validate($request, [
           'nombre' => 'required',
           'apellido' => 'required',
-          'rut' => 'required'
+          'rut' => 'required|unique:clients|integer',
+          'correo'=> 'email',
       ]);
 
       $input = $request->all();
