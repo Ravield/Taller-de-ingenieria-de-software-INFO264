@@ -7,6 +7,7 @@ use App\Query;
 use Session;
 use DB;
 use Mail;
+use App\Http\Requests\ContactFormRequest;
 class QueriesController extends Controller
 {
     /**
@@ -20,8 +21,6 @@ class QueriesController extends Controller
            DB::raw("CONCAT(asunto,' ',estado) AS name"),'id','created_at')
            ->orderBy('created_at','DESC')
            ->pluck('name', 'id');
-       //$consultas =(object)$consultas;
-       //$cons = $consultas;
        $cons = Query::orderBy('created_at','DESC')->get();
        return view('adqueries', compact('consultas','cons'));
      }
@@ -63,6 +62,11 @@ class QueriesController extends Controller
      */
     public function store(Request $request)
     {
+      $contact =[];
+      $contact['nombre'] = $request->get('nombre');
+      $contact['correo'] = $request->get('email');
+      $contact['asunto'] = $request->get('asunto');
+      $contact['consulta'] = $request->get('consulta');
       $this->validate($request, [
         'nombre' => 'required',
         'correo' => 'required|email',

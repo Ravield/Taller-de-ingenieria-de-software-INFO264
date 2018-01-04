@@ -85,7 +85,7 @@
                             <!--<li>
                                 <a href="{{route('home')}}">Inicio</a>  es para que no sea necesario cambiar la navegacion si cambiamos la url-->
                             <!-- que se vea solo si esta logeado-->
-                            @if(auth()->check())
+                            @if(auth()->check() && Auth::user()->role!=2)
                                 <li><a href="{{route('home')}}">Inicio</a></li>
                                 <li><a href="{{route('about')}}">Nosotros</a></li>
                                 <li><a href="{{route('service')}}">Servicios</a></li>
