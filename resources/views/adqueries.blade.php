@@ -38,7 +38,6 @@
                 <label>Consulta</label>
                 <p>{{$cons[0]->consulta}}</p>
               </div>
-
         </div>
       </div>
     </div>

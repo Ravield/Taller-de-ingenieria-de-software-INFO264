@@ -96,7 +96,7 @@
                                 <li><a href="{{route('about')}}">Nosotros</a></li>
                                 <li><a href="{{route('service')}}">Servicios</a></li>
                                 <li><a href="{{route('contact')}}">Contacto</a></li>
-                                <li><a href="{{route('home')}}">Login</a></li>
+                                <li><a href="{{route('adini')}}">Login</a></li>
                             @endif
 
                         </ul>
@@ -112,7 +112,7 @@
             <footer id="footer">
                 <div class="container">
                     <div class="col-md-8">
-                        <p class="copyright">Copyright: <span>2017</span> . Diseñado y Desarrollado por Elliot Ide </a></p>
+                        <p class="copyright">Copyright: <span>2017</span> . Diseñado y Desarrollado por ... </a></p>
                     </div>
                     <div class="col-md-4">
                     </div>

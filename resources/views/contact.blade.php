@@ -1,7 +1,7 @@
 @extends('layouts/timerLayout')
 
 @section('contenido') <!-- sirve para referenciar al yield-->
-{!! Form::open(['url' => 'contacto']) !!}<!--
+<!--{!! Form::open(['url' => 'registrarcontacto']) !!}
         ==================================================
             Global Page Section Start
         ================================================== -->
@@ -54,7 +54,7 @@
                                 Escriba su consulta o cuentenos su situacion, le responderemos a la brevedad
                             </p>
                             <div class="contact-form">
-                                <form id="contact-form" method="post" action="{{route ('messages')}}" role="form">
+                                <form id="contact-form" method="post" action="{{route ('storecontact')}}" role="form">
                                 {{ csrf_field() }}
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
                                         <input type="text" placeholder="Nombre" class="form-control" name="nombre" id="name" required>

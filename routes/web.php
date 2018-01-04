@@ -111,8 +111,8 @@ Route::get('/usuarios', 'UsersController@index')->name('usuarios');
 
 //Rutas consultas
 Route::get('verconsultas','QueriesController@index')->name('adqueries');
-Route::get('contacto','QueriesController@create')->name('contact');
-Route::post('contacto','QueriesController@store')->name('contact');
+Route::get('crearcontacto','QueriesController@create')->name('createcontact');
+Route::post('registrarcontacto','QueriesController@store')->name('storecontact');
 Route::post('verinfoconsultas','QueriesController@infoqueries');
 /*Route::get('eliminarcliente','ClientsController@destroy')->name('deleteclient');
 Route::get('editarcliente','ClientsController@edit')->name('editclient');

@@ -20,8 +20,8 @@ class QueriesController extends Controller
            ->orderBy('created_at','DESC')
            ->pluck('name', 'id');
        //$consultas =(object)$consultas;
-       $cons = $consultas;
-       //$cons = Query::orderBy('created_at','DESC')->get();
+       //$cons = $consultas;
+       $cons = Query::orderBy('created_at','DESC')->get();
        return view('adqueries', compact('consultas','cons'));
      }
 
