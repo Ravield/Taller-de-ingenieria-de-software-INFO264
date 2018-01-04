@@ -27,5 +27,12 @@ class UsersTableSeeder extends Seeder
           'password' => bcrypt('123123'),
           'role' => '1'
         ]);
+        //guest default
+        User::create([
+          'name' => 'Invitado',
+          'email' => 'invitado@sgaj.cl',
+          'password' => bcrypt('invitado'),
+          'role' => '2'
+        ]);
     }
 }
