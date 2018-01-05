@@ -107,8 +107,10 @@ Route::get('docclient','DocumentsController@documentClient')->name('docclient');
 Route::get('uploadedDoc','DocumentsController@getDoc')->name('getdoc');
 
 Route::get('documentos','DocumentsController@destroy')->name('destroy');
-Route::get('/usuarios', 'UsersController@index')->name('usuarios');
 
+//abogados|usuarios
+Route::get('/usuarios', 'UsersController@index')->name('usuarios');
+Route::post('editarusuario', 'UsersController@update')->name('edituser');
 //Rutas consultas
 Route::get('verconsultas','QueriesController@index')->name('adqueries');
 Route::get('crearcontacto','QueriesController@create')->name('createcontact');

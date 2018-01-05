@@ -22,12 +22,34 @@
     <!-- Main content -->
     <section class="content">
       <div class="panel panel-info">
+        @if(Session::has('flash_message'))
+            <div class="alert alert-success">
+                {{ Session::get('flash_message') }}
+            </div>
+        @endif
+        @if($errors->any())
+              <div class="alert alert-danger">
+                  @foreach($errors->all() as $error)
+                      <p>{{ $error }}</p>
+                  @endforeach
+              </div>
+        @endif
         <div class="panel-heading">Datos de Abogado</div>
         <div class="panel-body">
-            <label>Nombre</label>
-            <p>{{$user}}</p>
+            {!!Form::open(['url' => 'editarusuario'])!!}
+            <div class="form-group">
+            {!! Form::label('nombre', 'Nombre de Abogado (*)', ['class' => 'control-label']) !!}
+            {!! Form::hidden('nameoriginal', $user[0]->name, ['class' => 'form-control']) !!}
+            {!! Form::text('name', $user[0]->name, ['class' => 'form-control']) !!}
+            </div>
+            <div class="form-group">
+            {!! Form::label('nombre', 'Correo (*)', ['class' => 'control-label']) !!}
+            {!! Form::text('email', $user[0]->email, ['class' => 'form-control']) !!}
+            </div>
             <label>Causas Realizadas</label>
             <p>{{$causas}}</p>
+            {!! Form::submit('Editar Datos de Abogado', ['class' => 'btn btn-primary']) !!}
+            {!! Form::close() !!}
         </div>
       </div>
       <!-- Default box -->
