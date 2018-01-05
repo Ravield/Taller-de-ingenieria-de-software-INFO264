@@ -5,11 +5,11 @@
 <div class="content-wrapper">
   <section class="content-header">
     <h1>Documentos
-      <small>Documentos</small>
+      <small>Gestión de documentos</small>
     </h1>
     <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
-      <li><a href="#"><i class="fa fa-book"></i> Causas y Documentos</a></li>
+      <li><a href="{{route('adini')}}"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="{{route('cause')}}"></i> Causas</a></li>
       <li class="active">Documentos</li>
     </ol>
   </section>

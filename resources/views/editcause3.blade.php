@@ -8,11 +8,11 @@
   <section class="content-header">
     <h1>
       Causas
-      <small>Gestión de Causas</small>
+      <small>Gestión de causas</small>
     </h1>
     <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
-      <li><i class="fa fa-book"></i>Causas</li>
+      <li><a href="{{route('adini')}}"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="{{route('cause')}}">Causas</a></li>
       <li class="active">Editar Causa</li>
     </ol>
   </section>
@@ -54,7 +54,7 @@
         {!! Form::open(['route' => ['updatecause', $causa[0]->id], 'method' => 'PUT']) !!}
         <div class="form-group">
         <!--{!! Form::hidden('id',$causa[0]->id, ['class' => 'form-control'])!!}-->
-        {!! Form::label('nombre', 'Nombre de Causa', ['class' => 'control-label']) !!}
+        {!! Form::label('nombre', 'Nombre (*)', ['class' => 'control-label']) !!}
         {!! Form::text('nombre', null, ['class' => 'form-control']) !!} <!-- input -->
         </div>
         <div class="form-group">
@@ -64,7 +64,7 @@
             ], null, ['class' => 'form-control'] ) !!}
         </div>
         <div class="form-group">
-        {!! Form::label('resumen', 'Resumen', ['class' => 'control-label']) !!}
+        {!! Form::label('resumen', 'Resumen (*)', ['class' => 'control-label']) !!}
         {!! Form::text('resumen', null, ['class' => 'form-control']) !!} <!-- input -->
         </div>
         <div class="form-group">
@@ -72,7 +72,7 @@
         {!! Form::hidden('client_rut', $cli[0]->rut, ['class' => 'form-control'] ) !!}
         </div>
         <div class="form-group">
-        {!! Form::label('abogado', 'Abogado a Cargo ', ['class' => 'control-label']) !!}
+        {!! Form::label('abogado', 'Abogado', ['class' => 'control-label']) !!}
         {!! Form::select('abogado', $abogados, $causa[0]->abogado, ['class' => 'form-control'] ) !!}
         </div>
         {!! Form::submit('Editar Causa', ['class' => 'btn btn-primary']) !!}

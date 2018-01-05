@@ -8,11 +8,11 @@
     <section class="content-header">
       <h1>
         Causas
-        <small>Gestión de Causas y Documentos</small>
+        <small>Gestión de causas y documentos</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="{{route('adini')}}"><i class="fa fa-home"></i> Inicio</a></li>
-        <li class="active"><i class="fa fa-book"></i>Causas</li>
+        <li class="active">Causas</li>
       </ol>
     </section>
 
