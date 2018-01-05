@@ -6,11 +6,12 @@
 <div class="content-wrapper">
   <section class="content-header">
     <h1>Clientes
-      <small>Gestión de los clientes</small>
+      <small>Gestión de clientes</small>
     </h1>
     <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
-      <li class="active">Clientes</li>
+      <li><a href="{{route('adini')}}"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="{{route('adclient')}}">Clientes</a></li>
+      <li class="active">Editar Cliente</li>
     </ol>
   </section>
 

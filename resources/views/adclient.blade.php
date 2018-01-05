@@ -8,10 +8,10 @@
     <section class="content-header">
       <h1>
         Clientes
-        <small>Gestión de los clientes y sus causas</small>
+        <small>Gestión de clientes y sus causas</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="{{route('adini')}}"><i class="fa fa-home"></i> Inicio</a></li>
         <!--<li><a href="#">Examples</a></li>-->
         <li class="active">Clientes</li>
       </ol>

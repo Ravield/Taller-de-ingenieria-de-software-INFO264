@@ -8,7 +8,7 @@
     <section class="content-header">
       <h1>
         Consultas
-        <small>Gestión de Consultas</small>
+        <small>Gestión de consultas</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="{{route('adini')}}"><i class="fa fa-home"></i> Inicio</a></li>
@@ -60,7 +60,7 @@
             <div class="panel-heading">Responder</div>
                 <div class="panel-body">
                   <div class="form-group">
-                      {!! Form::label('respuesta', 'Respuesta', ['class' => 'control-label']) !!}
+                      {!! Form::label('respuesta', 'Mensaje', ['class' => 'control-label']) !!}
                       {!! Form::textarea('respuesta', null, ['class' => 'form-control']) !!}
                     </div>
                     {!! Form::submit('Enviar', ['class' => 'btn btn-primary']) !!}
