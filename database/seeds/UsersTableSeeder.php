@@ -28,11 +28,11 @@ class UsersTableSeeder extends Seeder
           'role' => '1'
         ]);
         //guest default
-        User::create([
+        /*User::create([
           'name' => 'Invitado',
           'email' => 'invitado@sgaj.cl',
           'password' => bcrypt('invitado'),
           'role' => '2'
-        ]);
+        ]);*/
     }
 }

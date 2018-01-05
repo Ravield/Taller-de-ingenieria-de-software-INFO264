@@ -68,8 +68,8 @@
         {!! Form::text('resumen', null, ['class' => 'form-control']) !!} <!-- input -->
         </div>
         <div class="form-group">
-        {!! Form::label('cliente', 'Cliente ', ['class' => 'control-label']) !!}
-        {!! Form::select('client_rut', $clientes, $cli[0]->rut, ['class' => 'form-control'] ) !!}
+        <!--{!! Form::label('cliente', 'Cliente ', ['class' => 'control-label']) !!}-->
+        {!! Form::hidden('client_rut', $cli[0]->rut, ['class' => 'form-control'] ) !!}
         </div>
         <div class="form-group">
         {!! Form::label('abogado', 'Abogado a Cargo ', ['class' => 'control-label']) !!}

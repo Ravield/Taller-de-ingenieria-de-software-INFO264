@@ -42,7 +42,7 @@ Route::get('servicio', function () {
 
 //Route::post('causas', array('uses' =>'CausesController@addCause'))
 
-Route::post('messages', function(){
+/*Route::post('messages', function(){
 
 	//enviar un correo al dueño de la pagina
 
@@ -52,12 +52,12 @@ Route::post('messages', function(){
 		$message->from($data['email'], $data['name'])
 		->to('eidepozo@gmail.com', 'Elliot')
 		->subject($data['subject']);
-	});
+	});*
 	//var_dump(request()->all());
 
 	//responder al usuario
 	return back()->with('flash', $data['name'] . ', Tu mensaje ha sido recibido');
-})->name('messages');
+})->name('messages');*/
 
 
 Route::get('administracion', 'HomeController@adini')->name('adini');

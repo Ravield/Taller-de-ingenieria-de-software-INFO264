@@ -114,6 +114,11 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">NAVEGACIÓN PRINCIPAL</li>
+        <li>
+          <a href="verconsultas">
+            <i class="fa fa-envelope"></i> <span>Consultas</span>
+          </a>
+        </li>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-users"></i>

@@ -18,9 +18,9 @@ class CreateClientsTable extends Migration
             $table->string('nombre');
             $table->string('apellido');
             $table->integer('rut')->unique()->unsigned();
-            $table->string('direccion');
-            $table->integer('telefono');
-            $table->string('correo');
+            $table->string('direccion')->nullable();
+            $table->integer('telefono')->nullable();
+            $table->string('correo')->nullable();
             $table->timestamps();
         });
     }

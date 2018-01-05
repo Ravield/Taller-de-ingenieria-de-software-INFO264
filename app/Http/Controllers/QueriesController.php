@@ -127,6 +127,8 @@ class QueriesController extends Controller
     {
       $id = $req->all()['id'];
       $consulta = Query::find($id);
+      $consulta->estado = "Resuelta";
+      $consulta->save();
       //$req->respuesta
       //return $data;
       //return $consulta;
@@ -138,5 +140,11 @@ class QueriesController extends Controller
         ->subject($data['subject']);
         $message->from('contactosgaj@gmail.com','Estudio Juridico M&A');
       });
+      $consultas = Query::select(
+          DB::raw("CONCAT(asunto,' ',estado) AS name"),'id','created_at')
+          ->orderBy('created_at','DESC')
+          ->pluck('name', 'id');
+      $cons = Query::orderBy('created_at','DESC')->get();
+      return view('adqueries', compact('consultas','cons'));
     }
 }

@@ -14,9 +14,10 @@ class QueriesTableSeeder extends Seeder
       Query::create([
         'nombre' => 'Fabian Catalan',
         'correo' => 'f.catalan.v@gmail.com',
-        'asunto' => 'Consulta Rikolina',
-        'consulta' => 'Necesito ayuda con mi prolapso anal',
-        'estado' => 'No Leido', //Leido, o no Leido
+        'asunto' => 'Consulta Precios',
+        'consulta' => 'Hola, quisiera saber acerca de los precios de sus servicios, en especifico de una
+        causa familiar',
+        'estado' => 'No Resuelta', //Leido, o no Leido
       ]);
     }
 }
