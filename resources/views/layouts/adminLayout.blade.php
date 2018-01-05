@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Sistema de Gestion de Asesorias Juridicas</title>
+  <title>SGAJ - Sistema de Gestión de Asesorías Jurídicas</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -34,11 +34,11 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="inicio" class="logo">
+    <a href="{{route('adini')}}" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>S</b>GAJ</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>S</b>GAJ</span>
+      <span class="logo-lg" title='Sistema de Gestión de Asesorías Jurídicas'><b>S</b>GAJ</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">

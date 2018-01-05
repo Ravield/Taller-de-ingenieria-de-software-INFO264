@@ -11,7 +11,7 @@
         <small>Gestión de Consultas</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="{{route('adini')}}"><i class="fa fa-home"></i> Inicio</a></li>
         <!--<li><a href="#">Examples</a></li>-->
         <li class="active">Consultas</li>
       </ol>
@@ -19,28 +19,38 @@
   <section class="content">
     <div class="form-group">
       {!! Form::open(['url' => 'verinfoconsultas']) !!}
-      {!! Form::label('nombre', 'Nombre', ['class' => 'control-label']) !!}
+      {!! Form::label('nombre', 'Inbox', ['class' => 'control-label']) !!}
       {!! Form::select('id', $consultas, ['class' => 'form-control'] ) !!}
-      {!! Form::submit('Ver Info', ['class' => 'btn btn-primary']) !!}
+      {!! Form::submit('Ver Consulta', ['class' => 'btn btn-primary']) !!}
       {!! Form::close() !!}
     </div>
-    <div class="row">
-      <div class="col col-md-8">
-        <div class="panel panel-info">
-          <div class="panel-heading">Estado {{$cons[0]->estado}}</div>
-              <div class="panel-body">
-                <label>Nombre</label>
-                <p>{{$cons[0]->nombre}}</p>
-                <label>Correo</label>
-                <p>{{$cons[0]->correo}}</p>
-                <label>Asunto</label>
-                <p>{{$cons[0]->asunto}}</p>
-                <label>Consulta</label>
-                <p>{{$cons[0]->consulta}}</p>
-              </div>
-        </div>
+    <div class="box box-primary">
+      <div class="box-body">
+        <h4>{{$cons[0]->asunto}}</h3>
+        <table class="table">
+          <!--<thead>
+            <th></th>
+            <th></th>
+            <th></th>
+          </thead>-->
+          <tbody>
+            <tr>
+              <td width="10%"><b>{{$cons[0]->nombre}}</b></td>
+              <td width="30%">{{$cons[0]->correo}}</td>
+              <td width="10%">{{$cons[0]->estado}}</td>
+            </tr>
+          </tbody>
+        </table><br>
+        <table class="table">
+            <tr>
+              <td width="3%"></td>
+              <td width="95%">{{$cons[0]->consulta}}</td>
+            </tr>
+          </tbody>
+        </table><hr>
       </div>
     </div>
+
     <!-- Formulario de Respuesta -->
     <form id="sendMail{{$cons[0]->id}}" action="{{route('sendanswer')}}" method="GET">
       <input type="hidden" name="id" value={{$cons[0]->id}}/>
@@ -58,6 +68,6 @@
                   </div>
                 </div>
               </div>
-            </div<>
+            </div >
           </section>
           @stop

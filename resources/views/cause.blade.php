@@ -11,7 +11,7 @@
         <small>Gestión de Causas y Documentos</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="{{route('adini')}}"><i class="fa fa-home"></i> Inicio</a></li>
         <li class="active"><i class="fa fa-book"></i>Causas</li>
       </ol>
     </section>

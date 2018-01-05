@@ -1,8 +1,8 @@
 @extends('layouts/timerLayout')
 
 @section('contenido') <!-- sirve para referenciar al yield-->
-<!-- 
-        ================================================== 
+<!--
+        ==================================================
             Global Page Section Start
         ================================================== -->
         <section class="global-page-header">
@@ -13,7 +13,7 @@
                             <h2>Sobre Nosotros</h2>
                             <ol class="breadcrumb">
                                 <li>
-                                    <a href="index.html">
+                                    <a href="{{route('home')}}">
                                         <i class="ion-ios-home"></i>
                                         Inicio
                                     </a>
@@ -26,8 +26,8 @@
             </div>
         </section>
 
-        <!-- 
-        ================================================== 
+        <!--
+        ==================================================
             Company Description Section Start
         ================================================== -->
         <section class="company-description">
@@ -40,12 +40,12 @@
                         <div class="block">
                             <h3 class="subtitle wow fadeInUp" data-wow-delay=".3s" data-wow-duration="500ms">¿Por qué nos diferenciamos?</h3>
                             <p  class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms">
-                                
+
                             </p>
                             <p  class="wow fadeInUp" data-wow-delay=".7s" data-wow-duration="500ms">
-                                Trabajamos por el bien común de nuestros clientes , esperando alcanzar sus metas de la forma más profesional posible, cumpliendo altos estándares de eticos. 
+                                Trabajamos por el bien común de nuestros clientes , esperando alcanzar sus metas de la forma más profesional posible, cumpliendo altos estándares de éticos.
                             </p>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -53,8 +53,8 @@
         </section>
 
 
-        <!-- 
-        ================================================== 
+        <!--
+        ==================================================
             Company Feature Section Start
         ================================================== -->
         <section class="about-feature clearfix">
@@ -62,15 +62,15 @@
                 <div class="row">
                     <div class="block about-feature-1 wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">
                         <h2>
-                        Nuestra filosofia
+                        Nuestra filosofía
                         </h2>
                         <p>
-                            Nos hemos comprometido con la excelencia profesional, es nuestro deber como estudio seguir los mas altos estandares eticos en el ejercicio del derecho que es una actividad honorable y enriquecedora.
+                            Nos hemos comprometido con la excelencia profesional, es nuestro deber como estudio seguir los mas altos estandares éticos en el ejercicio del derecho que es una actividad honorable y enriquecedora.
                         </p>
                     </div>
                     <div class="block about-feature-2 wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
                         <h2 class="item_title">
-                        Ambicion por desafios
+                        Ambición por desafios
                         </h2>
                         <p>
                             Tenemos un estilo de colaboración y de trabajo en equipo asequible y abierto que combina la efectividad con la cohesión y la colegiabilidad de nuestros abogados, siempre aspirando a nuevos horizontes.
@@ -90,8 +90,8 @@
         </section>
 
 
-        <!-- 
-        ================================================== 
+        <!--
+        ==================================================
             Team Section Start
         ================================================== -->
         <section id="team">

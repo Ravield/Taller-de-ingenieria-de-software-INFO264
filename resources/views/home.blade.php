@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <div class="block wow fadeInUp" data-wow-delay=".3s">
-                            
+
                             <!-- Slider -->
                             <section class="cd-intro">
                                 <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >
@@ -20,7 +20,7 @@
                                 </section> <!-- cd-intro -->
                                 <!-- /.slider -->
                                 <h2 class="wow fadeInUp animated" data-wow-delay=".6s" >
-                                    Mattar & Asociados es un Estudio Jurídico cuyos socios fundadores son los abogados<br> Gabriela Hidalgo Sáez, Pablo Obreque Pardo, Camila Mattar Hazbun, se asociaron el objetivo de potenciar eficientemente sus conocimientos para así ofrecer un servicio de calidad a la comunidad Valdiviana.
+                                    Mattar & Asociados es un Estudio Jurídico cuyos socios fundadores son los abogados<br> Gabriela Hidalgo Sáez, Pablo Obreque Pardo y Camila Mattar Hazbun, asociados con el objetivo de potenciar eficientemente sus conocimientos para así ofrecer un servicio de calidad en todo Chile.
                                 </h2>
                             </div>
                         </div>
@@ -37,10 +37,10 @@
                                 SOBRE NOSOTROS
                                 </h2>
                                 <p>
-                                    Somos un estudio comprometido con la excelencia prestando servicios en las áreas como comerciales, empresarial, laborales y familia. Nuestra misión se define en torno a los conceptos de excelencia, confianza y eficiencia procurando entregar a nuestros clientes una atención cercana, profesional y oportuna.
+                                    Somos un estudio comprometido con la excelencia especializados en áreas comerciales, empresariales, laborales y familia. Nuestra misión se define en torno a los conceptos de excelencia, confianza y eficiencia procurando entregar a nuestros clientes una atención cercana, profesional y oportuna.
                                 </p>
                             </div>
-                            
+
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
@@ -51,7 +51,7 @@
                 </div>
             </section> <!-- /#about -->
 
-            
+
              <!--
         ==================================================
             Call To Action Section Start
@@ -69,5 +69,5 @@
 
                 </div>
             </div>
-        </section>                        
+        </section>
 @stop

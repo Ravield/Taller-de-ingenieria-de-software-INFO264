@@ -19,7 +19,7 @@ class CreateQueriesTable extends Migration
             $table->string('correo');
             $table->string('asunto');
             $table->string('consulta');
-            $table->string('estado')->default('No Leido');
+            $table->string('estado')->default('No Resuelta');
             $table->timestamps();
         });
     }

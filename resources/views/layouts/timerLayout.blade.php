@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="icon" type="image/png" href="images/favicon.png">
-        <title>Mattar & Asociados</title>
+        <title>Estudio Jurídico Mattar & Asociados - Valdivia</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="author" content="">
@@ -112,7 +112,7 @@
             <footer id="footer">
                 <div class="container">
                     <div class="col-md-8">
-                        <p class="copyright">Copyright: <span>2017</span> . Diseñado y Desarrollado por ... </a></p>
+                        <p class="copyright">Copyright © <span>2017</span>. Diseñado y Desarrollado por Marco Araya, Elliot Ide y Jorge Obando.</p>
                     </div>
                     <div class="col-md-4">
                     </div>

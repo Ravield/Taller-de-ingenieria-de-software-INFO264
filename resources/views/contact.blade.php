@@ -13,7 +13,7 @@
                             <h2>Contacto</h2>
                             <ol class="breadcrumb">
                                 <li>
-                                    <a href="index.html">
+                                    <a href="{{route('home')}}">
                                         <i class="ion-ios-home"></i>
                                         Inicio
                                     </a>
@@ -51,7 +51,7 @@
                         <div class="block">
                             <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Contactenos</h2>
                             <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
-                                Escriba su consulta o cuentenos su situacion, le responderemos a la brevedad
+                                Escriba su consulta o cuentenos su situación, le responderemos a la brevedad
                             </p>
                             <div class="contact-form">
                                 <form id="contact-form" method="post" action="{{route ('storecontact')}}" role="form">

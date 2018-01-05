@@ -13,7 +13,7 @@
                             <h2>Servicios</h2>
                             <ol class="breadcrumb">
                                 <li>
-                                    <a href="index.html">
+                                    <a href="{{route('home')}}">
                                         <i class="ion-ios-home"></i>
                                         Inicio
                                     </a>
@@ -31,7 +31,7 @@
                     <div class="section-heading">
                         <h1 class="title wow fadeInDown" data-wow-delay=".2s">Áreas de servicio</h1>
                         <p class="wow fadeInDown" data-wow-delay=".5s">
-                            Nos especializados en múltiples áreas de práctica en las cuales les podemos <br> ofrecer los siguientes servicios.
+                            Nos especializamos en múltiples áreas de práctica abarcando<br> los siguientes servicios.
                         </p>
                     </div>
                     <div class="row">
@@ -127,7 +127,7 @@
                         </div>
                     </div>
                 </div>
-            </section> <!-- /#feature --> 
+            </section> <!-- /#feature -->
 
          <!--
         ==================================================

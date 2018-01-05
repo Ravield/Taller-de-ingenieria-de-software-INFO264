@@ -18,7 +18,7 @@ class QueriesController extends Controller
      public function index()
      {
        $consultas = Query::select(
-           DB::raw("CONCAT(asunto,' ',estado) AS name"),'id','created_at')
+           DB::raw("CONCAT(asunto,' [',estado,']') AS name"),'id','created_at')
            ->orderBy('created_at','DESC')
            ->pluck('name', 'id');
        $cons = Query::orderBy('created_at','DESC')->get();
